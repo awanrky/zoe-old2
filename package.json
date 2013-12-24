@@ -1,0 +1,38 @@
+{
+  "name": "zoe",
+  "description": "Built with theStack!",
+  "version": "0.0.1",
+  "homepage": "https://github.com/awanrky/zoe",
+  "author": {
+    "name": "Mark Ott",
+    "url": "https://github.com/awanrky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:awanrky/zoe.git"
+  },
+  "homepage": "https://awanrky.github.io/zoe",
+  "keywords": [
+    "generator-thestack"
+  ],
+  "bugs": {
+    "url": "https://github.com/awanrky/zoe/issues"
+  },
+  "main": "./server/server",
+  "dependencies": {
+    "express": "3.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-nodemon": "0.0.9",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "grunt-contrib-jshint": "~0.3.0",
+    "grunt-shell": "~0.3.1",
+    "grunt-contrib-less": "~0.6.4",
+    "grunt-mocha-test": "~0.6.2",
+    "mongoose": "~3.6.19",
+    "superagent": "~0.15.4",
+    "expect.js": "~0.2.0",
+    "uglify-js": "~2.2.5"
+  }
+}
