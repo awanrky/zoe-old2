@@ -1,13 +1,13 @@
 // IndexView.js
 
-define(["jquery", "backbone", "models/IndexModel", "text!templates/Index.html"],
+define(['jquery', 'backbone', 'models/IndexModel', 'text!templates/Index.html'],
 
     function($, Backbone, Model, template){
 
         var IndexView = Backbone.View.extend({
 
             // The DOM Element associated with this view
-            el: ".magic",
+            el: '.magic',
 
             // View constructor
             initialize: function() {

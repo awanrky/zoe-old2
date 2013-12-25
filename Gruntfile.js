@@ -9,11 +9,11 @@ module.exports = function(grunt) {
           args: ['dev'],
           ignoredFiles: ['README.md', 'node_modules/**'],
           watchedExtensions: ['js'],
-          watchedFolders: ['tests'],
+          watchedFolders: ['tests', 'server', 'public'],
           debug: false,
           delayTime: 1,
           env: {
-            PORT: '1337'
+            PORT: '1338'
           },
           cwd: __dirname
         }

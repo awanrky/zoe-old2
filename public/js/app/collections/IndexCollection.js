@@ -1,6 +1,6 @@
 // IndexCollection.js
 
-define(["jquery", "backbone", "models/IndexModel"],
+define(['jquery', 'backbone', 'models/IndexModel'],
 	function($, Backbone, Model) {
 
 		// Creates a new Backbone Collection class object
