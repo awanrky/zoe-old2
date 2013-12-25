@@ -3,6 +3,7 @@
  * Created by mark on 11/16/13.
  */
 var mongoose =     require('mongoose'),
+    connection =    require('../../databases/arduino-home'),
     Schema =     mongoose.Schema;
 
 var dhtSchema = new Schema({
@@ -23,5 +24,5 @@ dhtSchema.virtual('degreesFahrenheit').get(function() {
     return (this.degreesCelcius * 9.0 / 5.0) + 32.0;
 });
 
-var schemaModel = mongoose.model('dhtSchemaModel', dhtSchema);
+var schemaModel = connection.model('dhtSchemaModel', dhtSchema);
 module.exports = schemaModel;

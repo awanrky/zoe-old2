@@ -1,11 +1,14 @@
+/**
+ * Created by mark on 12/25/13.
+ */
 'use strict';
 
-var Route = require('./route');
-var schema = require('../../schemas/arduino-home/cd5');
+var Route = require('./../route');
+var schema = require('../../../schemas/arduino-home/invalid');
 
-var route = new Route('cd5');
+var route = new Route('arduino-home/invalid');
 
-module.exports.api = function(server, databaseConnection) {
+module.exports.api = function(server) {
 
     server.get(route.getPath('id/:id'), function(req, res){
         schema.findById(req.params.id, function(err, docs){
@@ -21,7 +24,7 @@ module.exports.api = function(server, databaseConnection) {
         schema
             .find({datetime: {$gt: startDate}})
             .find({datetime: {$lt: endDate}})
-            .select('sensorName datetime reading')
+            .select('datetime data returnedType')
             .exec(function(error, documents) {
                 if (error) { res.send(400, {error: error.message}); return; }
                 res.send(documents);

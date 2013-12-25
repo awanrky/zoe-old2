@@ -3,6 +3,7 @@
  * Created by mark on 11/16/13.
  */
 var mongoose =     require('mongoose'),
+    connection =    require('../../databases/arduino-home'),
     Schema =     mongoose.Schema;
 
 var invalidSchema = new Schema({
@@ -15,5 +16,5 @@ var invalidSchema = new Schema({
 invalidSchema.index({datetime: 1, type: -1});
 invalidSchema.index({returnedType: 1, type: -1});
 
-var schemaModel = mongoose.model('invalidSchemaModel', invalidSchema);
+var schemaModel = connection.model('invalidSchemaModel', invalidSchema);
 module.exports = schemaModel;

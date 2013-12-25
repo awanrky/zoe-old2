@@ -3,6 +3,7 @@
 'use strict';
 
 var mongoose =     require('mongoose'),
+    connection =    require('../../databases/arduino-home'),
     Schema =     mongoose.Schema;
 
 var tmp36Schema = new Schema({
@@ -25,5 +26,5 @@ tmp36Schema.virtual('degreesFahrenheit').get(function() {
 // CREATE DATABASE MODEL
 // =====================
 
-var schemaModel = mongoose.model('tmp36SchemaModel', tmp36Schema);
+var schemaModel = connection.model('tmp36SchemaModel', tmp36Schema);
 module.exports = schemaModel;

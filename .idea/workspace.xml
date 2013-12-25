@@ -2,24 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fae70d3-9a53-4e65-a5c9-a3ee5ba1f2c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/databases/arduino-home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/v1/cd5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/databases/connection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/route.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/v1/route.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/API.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/schemas/schema.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" afterPath="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/DashboardView.js" afterPath="$PROJECT_DIR$/public/js/app/views/DashboardView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/config/Init.js" afterPath="$PROJECT_DIR$/public/js/app/config/Init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/routers/Router.js" afterPath="$PROJECT_DIR$/public/js/app/routers/Router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/ZoeView.js" afterPath="$PROJECT_DIR$/public/js/app/views/ZoeView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config/config-template.js" afterPath="$PROJECT_DIR$/server/config/config-template.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/v1/arduino-home/dht.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/v1/arduino-home/invalid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/mark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/v1/arduino-home/tmp36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/api/v1/arduino-home/tsl2561.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/api/v1/cd5.js" afterPath="$PROJECT_DIR$/server/api/v1/arduino-home/cd5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/schemas/arduino-home/dht.js" afterPath="$PROJECT_DIR$/server/schemas/arduino-home/dht.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/schemas/arduino-home/invalid.js" afterPath="$PROJECT_DIR$/server/schemas/arduino-home/invalid.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/schemas/arduino-home/tmp36.js" afterPath="$PROJECT_DIR$/server/schemas/arduino-home/tmp36.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/schemas/arduino-home/tsl2561.js" afterPath="$PROJECT_DIR$/server/schemas/arduino-home/tsl2561.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/zoe.iml" afterPath="$PROJECT_DIR$/.idea/zoe.iml" />
     </list>
     <ignored path="zoe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,28 +39,63 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="Router.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/routers/Router.js">
+          <file leaf-file-name="dht.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/dht.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="1206">
+                <state line="27" column="29" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cd5.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/api/v1/cd5.js">
+          <file leaf-file-name="tsl2561.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/tsl2561.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="14" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-                  <folding />
+                <state line="35" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+                  <folding>
+                    <element signature="e#0#39#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cd5.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/cd5.js">
+          <file leaf-file-name="invalid.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/invalid.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="29" selection-start="691" selection-end="691" vertical-scroll-proportion="0.39498433" vertical-offset="0" max-vertical-offset="957">
+                <state line="26" column="21" selection-start="785" selection-end="785" vertical-scroll-proportion="0.45141065" vertical-offset="0" max-vertical-offset="957">
+                  <folding>
+                    <element signature="e#0#39#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tmp36.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/tmp36.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="36" selection-start="175" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
+                  <folding>
+                    <element signature="e#0#39#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tmp36.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/tmp36.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="60" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tsl2561.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/tsl2561.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="26" column="23" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
                   <folding />
                 </state>
               </provider>
@@ -75,10 +105,37 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="0" selection-start="862" selection-end="862" vertical-scroll-proportion="0.23728813" vertical-offset="280" max-vertical-offset="1224">
+                <state line="12" column="58" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1368">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="invalid.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/invalid.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="0.37617555" vertical-offset="0" max-vertical-offset="957">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="cd5.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/cd5.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="cd5.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/cd5.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
                   <folding />
                 </state>
               </provider>
@@ -104,22 +161,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/app/views/DashboardView.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
-        <option value="$PROJECT_DIR$/public/js/app/routers/Router.js" />
-        <option value="$PROJECT_DIR$/server/API.js" />
-        <option value="$PROJECT_DIR$/server/schemas/schema.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/server/api/route.js" />
-        <option value="$PROJECT_DIR$/server/api/v1/route.js" />
-        <option value="$PROJECT_DIR$/public/js/app/config/Init.js" />
-        <option value="$PROJECT_DIR$/server/config/config-template.js" />
-        <option value="$PROJECT_DIR$/server/api/v1/cd5.js" />
-        <option value="$PROJECT_DIR$/server/server.js" />
-        <option value="$PROJECT_DIR$/server/databases/connection.js" />
-        <option value="$PROJECT_DIR$/server/schemas/arduino-home/cd5.js" />
         <option value="$PROJECT_DIR$/server/databases/arduino-home.js" />
         <option value="$PROJECT_DIR$/server/config/config.js" />
+        <option value="$PROJECT_DIR$/server/api/v1/cd5.js" />
+        <option value="$PROJECT_DIR$/server/schemas/arduino-home/dht.js" />
+        <option value="$PROJECT_DIR$/server/schemas/arduino-home/invalid.js" />
+        <option value="$PROJECT_DIR$/server/schemas/arduino-home/tmp36.js" />
+        <option value="$PROJECT_DIR$/server/schemas/arduino-home/tsl2561.js" />
+        <option value="$PROJECT_DIR$/server/api/v1/dht.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/server/api/v1/tmp36.js" />
+        <option value="$PROJECT_DIR$/server/api/v1/arduino-home/tmp36.js" />
+        <option value="$PROJECT_DIR$/server/api/v1/arduino-home/dht.js" />
+        <option value="$PROJECT_DIR$/server/api/v1/arduino-home/cd5.js" />
+        <option value="$PROJECT_DIR$/server/api/v1/arduino-home/tsl2561.js" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/api/v1/arduino-home/invalid.js" />
       </list>
     </option>
   </component>
@@ -283,6 +340,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino-home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -582,6 +665,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/api/v1/arduino-home" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
@@ -645,7 +733,7 @@
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17129135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17129135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15848452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -669,64 +757,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/ZoeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="2" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/DashboardView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="45" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="972" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="45" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/routers/Router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="1206">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="21" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2016">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="6" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/v1/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="222" selection-end="222" vertical-scroll-proportion="0.20501138" vertical-offset="0" max-vertical-offset="878" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/config/Init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="787" selection-end="787" vertical-scroll-proportion="0.60314137" vertical-offset="0" max-vertical-offset="1584" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/config-template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="2" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/v1/cd5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="27" selection-start="253" selection-end="253" vertical-scroll-proportion="0.18808778" vertical-offset="0" max-vertical-offset="957">
@@ -752,23 +782,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/tmp36.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="60" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/tsl2561.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="23" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/routers/Router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="799" selection-end="799" vertical-scroll-proportion="0.51059324" vertical-offset="202" max-vertical-offset="1206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="143" selection-end="143" vertical-scroll-proportion="0.09677419" vertical-offset="0" max-vertical-offset="930">
+        <state line="24" column="4" selection-start="558" selection-end="558" vertical-scroll-proportion="0.46451613" vertical-offset="0" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/dht.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="186" selection-end="186" vertical-scroll-proportion="0.11440678" vertical-offset="0" max-vertical-offset="1980">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/dht.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="29" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/cd5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="29" selection-start="691" selection-end="691" vertical-scroll-proportion="0.39498433" vertical-offset="0" max-vertical-offset="957">
+        <state line="7" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/tsl2561.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="2" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/cd5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="862" selection-end="862" vertical-scroll-proportion="0.23728813" vertical-offset="280" max-vertical-offset="1224">
+        <state line="12" column="58" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/tmp36.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="175" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/invalid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="21" selection-start="785" selection-end="785" vertical-scroll-proportion="0.45141065" vertical-offset="0" max-vertical-offset="957">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/schemas/arduino-home/invalid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="0.37617555" vertical-offset="0" max-vertical-offset="957">
           <folding />
         </state>
       </provider>

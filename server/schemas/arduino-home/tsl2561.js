@@ -3,6 +3,7 @@
  * Created by mark on 11/16/13.
  */
 var mongoose =     require('mongoose'),
+    connection =    require('../../databases/arduino-home'),
     Schema =     mongoose.Schema;
 
 var tsl2561Schema = new Schema({
@@ -22,5 +23,5 @@ tsl2561Schema.index({lux: 1, type: -1});
 // CREATE DATABASE MODEL
 // =====================
 
-var schemaModel = mongoose.model('tsl2561SchemaModel', tsl2561Schema);
+var schemaModel = connection.model('tsl2561SchemaModel', tsl2561Schema);
 module.exports = schemaModel;
