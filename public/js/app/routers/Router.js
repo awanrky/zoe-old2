@@ -1,10 +1,24 @@
 // Router.js
 
-define(["jquery", "backbone", "models/IndexModel", "views/IndexView", "collections/IndexCollection"],
+define([
+    'jquery',
+    'backbone',
+    'models/DashboardModel',
+    'views/DashboardView',
+    'models/ArduinoHomeModel',
+    'views/ArduinoHomeView'
+],
 
-    function($, Backbone, Model, View, Collection) {
+    function(
+        $,
+        Backbone,
+        DashboardModel,
+        DashboardView,
+        ArduinoHomeModel,
+        ArduinoHomeView
+    ) {
 
-        var Router = Backbone.Router.extend({
+        return Backbone.Router.extend({
 
             initialize: function() {
 
@@ -13,25 +27,24 @@ define(["jquery", "backbone", "models/IndexModel", "views/IndexView", "collectio
 
             },
 
-            // All of your Backbone Routes (add more)
             routes: {
 
                 // When there is no hash on the url, the home method is called
-                "": "index"
+                '': 'dashboard',
+                'dashboard': 'dashboard',
+                'arduinohome': 'arduinoHome'
 
             },
 
-            index: function() {
+            dashboard: function() {
+                new DashboardView();
+            },
 
-                // Instantiates a new view which will render the header text to the page
-                new View();
-
+            arduinoHome: function() {
+                new ArduinoHomeView();
             }
 
         });
-
-        // Returns the DesktopRouter class
-        return Router;
 
     }
 
