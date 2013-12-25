@@ -19,7 +19,7 @@ define([
     ) {
         'use strict';
 
-        return Backbone.Router.extend({
+        var router = Backbone.Router.extend({
 
             initialize: function() {
 
@@ -39,13 +39,23 @@ define([
 
             dashboard: function() {
                 new DashboardView();
+                this.setNavBarItemActive('dashboard');
             },
 
             arduinoHome: function() {
                 new ArduinoHomeView();
+                this.setNavBarItemActive('arduinohome');
+            },
+
+            setNavBarItemActive: function(route) {
+                $('#menu li.active').removeClass('active');
+                var selector = '#menu a[href=#' + route + ']';
+                $(selector).parent().addClass('active');
             }
 
         });
+
+        return router;
 
     }
 

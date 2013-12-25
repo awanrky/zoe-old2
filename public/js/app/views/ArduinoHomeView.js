@@ -22,11 +22,11 @@ define([
 
         return ZoeView.extend({
 
-            el: '.magic',
-
-            initialize: function() {
-                this.render();
-            },
+//            el: '.magic',
+//
+//            initialize: function() {
+//                this.render();
+//            },
 
             events: {
 
@@ -37,8 +37,6 @@ define([
                 this.template = _.template(ArduinoHomeTemplate, {});
 
                 this.$el.html(this.template);
-
-                this.setNavBarItemActive();
 
                 return this;
 

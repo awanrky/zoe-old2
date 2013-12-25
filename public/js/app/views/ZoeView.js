@@ -8,16 +8,13 @@ define(['jquery', 'backbone'],
 
         return Backbone.View.extend({
 
+            el: '.magic',
 
             initialize: function() {
                 this.render();
-            },
-
-            setNavBarItemActive: function() {
-                $('#menu li.active').removeClass('active');
-                var selector = '#menu a[href=#' + Backbone.history.fragment + ']';
-                $(selector).parent().addClass('active');
             }
+
+
 
         });
 

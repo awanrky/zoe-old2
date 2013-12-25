@@ -22,14 +22,13 @@ define([
 
         return ZoeView.extend({
 
-            el: '.magic',
+//            el: '.magic',
 
-            initialize: function() {
-
-                // Calls the view's render method
-                this.render();
-
-            },
+//            initialize: function() {
+//
+//                this.render();
+//
+//            },
 
             events: {
 
@@ -40,8 +39,6 @@ define([
                 this.template = _.template(dashboardTemplate, {});
 
                 this.$el.html(this.template);
-
-                this.setNavBarItemActive();
 
                 return this;
 

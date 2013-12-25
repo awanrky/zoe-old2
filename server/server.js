@@ -1,62 +1,62 @@
-// DEPENDENCIES
-// ============
+'use strict';
 
-var Config =  global.Config = require('./config/config.js').config;
-    express = require("express"),
-    http =    require("http"),
-    port =    ( process.env.PORT || Config.listenPort ),
-    server =  module.exports = express(),
-    mongoose =     require('mongoose'),
-    API =     require('./API');
+var Config = require('./config/config.js').config;
+var express = require('express'),
+    http = require('http'),
+    port = ( process.env.PORT || Config.listenPort ),
+    server = module.exports = express(),
+    mongoose = require('mongoose');
+
+var cd5api = require('./api/v1/cd5');
 
 // DATABASE CONFIGURATION
 // ======================
 
-// Connect to Database
-mongoose.connect('mongodb://' + Config.database.IP + ':' +Config.database.port + '/' + Config.database.name);
+function getDatabaseConnectionString(databaseConfig) {
+    return 'mongodb://' + databaseConfig.IP + ':' + databaseConfig.port + '/' + databaseConfig.name;
+}
 
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'DB connection error:'));
-db.once('open', function callback () {
-  console.log('Connected to ' + Config.database.name);
+mongoose.connect(
+    getDatabaseConnectionString(Config.database)
+);
+var zoeMongooseConnection = mongoose.connection;
+zoeMongooseConnection.on('error', console.error.bind(console, 'DB connection error:'));
+zoeMongooseConnection.once('open', function callback() {
+    console.log('Connected to ' + getDatabaseConnectionString(Config.database));
 });
 
-// DATABASE SCHEMAS
-// ================
 
-var schema = require('./schemas/schema');
 
 // SERVER CONFIGURATION
 // ====================
 
-server.configure(function() {
+server.configure(function () {
 
-  server.use(express["static"](__dirname + "/../public"));
+    server.use(express['static'](__dirname + '/../public'));
 
-  server.use(express.errorHandler({
+    server.use(express.errorHandler({
 
-    dumpExceptions: true,
+        dumpExceptions: true,
 
-    showStack: true
+        showStack: true
 
-  }));
+    }));
 
-  server.use(express.bodyParser());
+    server.use(express.bodyParser());
 
-  server.use(express.cookieParser());
+    server.use(express.cookieParser());
 
-  server.use(express.session({ secret: Config.sessionSecret }));
+    server.use(express.session({ secret: Config.sessionSecret }));
 
-  server.use(server.router);
+    server.use(server.router);
 
 });
 
 // API
 // ===
 
-API.api(server, schema);
+cd5api.api(server);
 
 // Start Node.js Server
 http.createServer(server).listen(port);
 
-console.log('\n\nWelcome to Stacked!\n\nPlease go to http://localhost:' + port + ' to start using Require.js and Backbone.js\n\n');
