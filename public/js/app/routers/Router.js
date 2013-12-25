@@ -17,6 +17,7 @@ define([
         ArduinoHomeModel,
         ArduinoHomeView
     ) {
+        'use strict';
 
         return Backbone.Router.extend({
 

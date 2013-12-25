@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fae70d3-9a53-4e65-a5c9-a3ee5ba1f2c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/models/ArduinoHomeModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/templates/Dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/models/DashboardModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/views/DashboardView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/app/models/IndexModel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/app/templates/Index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/app/views/IndexView.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/config/Init.min.js" afterPath="$PROJECT_DIR$/public/js/app/config/Init.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/views/ZoeView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" afterPath="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/DashboardView.js" afterPath="$PROJECT_DIR$/public/js/app/views/DashboardView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/routers/Router.js" afterPath="$PROJECT_DIR$/public/js/app/routers/Router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.min.css" afterPath="$PROJECT_DIR$/public/css/app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="zoe.iws" />
@@ -46,10 +32,8 @@
       <file leaf-file-name="Router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/routers/Router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="7" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1008">
-              <folding>
-                <marker date="1387945682866" expanded="true" signature="21:169" placeholder="[...]" />
-              </folding>
+            <state line="26" column="41" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="1026">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,7 +41,29 @@
       <file leaf-file-name="ArduinoHomeView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="49" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
+            <state line="26" column="36" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashboardView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/DashboardView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="10" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZoeView.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/ZoeView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="35" selection-start="470" selection-end="470" vertical-scroll-proportion="0.32801822" vertical-offset="0" max-vertical-offset="878">
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -76,14 +82,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArduinoHome.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ArduinoHome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="48" selection-start="151" selection-end="151" vertical-scroll-proportion="0.10575793" vertical-offset="0" max-vertical-offset="851">
+            <state line="5" column="48" selection-start="151" selection-end="151" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="198">
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="24" selection-start="1898" selection-end="1898" vertical-scroll-proportion="60.48148" vertical-offset="2497" max-vertical-offset="3348">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,22 +130,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/js/app/views/IndexView.js" />
         <option value="$PROJECT_DIR$/public/js/app/templates/Index.html" />
         <option value="$PROJECT_DIR$/public/js/app/collections/IndexCollection.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/DashboardView.js" />
         <option value="$PROJECT_DIR$/public/js/app/models/IndexModel.js" />
         <option value="$PROJECT_DIR$/public/js/app/models/DashboardModel.js" />
         <option value="$PROJECT_DIR$/public/js/app/templates/Dashboard.html" />
         <option value="$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html" />
         <option value="$PROJECT_DIR$/public/js/app/models/ArduinoHomeModel.js" />
-        <option value="$PROJECT_DIR$/public/js/app/routers/Router.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/public/css/font-awesome.css" />
+        <option value="$PROJECT_DIR$/public/js/app/routers/Router.js" />
+        <option value="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
+        <option value="$PROJECT_DIR$/public/js/app/views/DashboardView.js" />
+        <option value="$PROJECT_DIR$/public/js/app/views/ZoeView.js" />
       </list>
     </option>
   </component>
@@ -570,11 +585,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/SpecRunner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
@@ -589,37 +599,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/DashboardView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/templates/Dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="148" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="198">
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/models/DashboardModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/models/ArduinoHomeModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -628,24 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="2" selection-start="414" selection-end="414" vertical-scroll-proportion="0.3793911" vertical-offset="0" max-vertical-offset="854">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/routers/Router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="7" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1008">
-          <folding>
-            <marker date="1387945682866" expanded="true" signature="21:169" placeholder="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="49" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,19 +644,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="46" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.3172738" vertical-offset="324" max-vertical-offset="3348">
+        <state line="5" column="48" selection-start="151" selection-end="151" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="198">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/routers/Router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="41" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="1026">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="48" selection-start="151" selection-end="151" vertical-scroll-proportion="0.10575793" vertical-offset="0" max-vertical-offset="851">
+        <state line="48" column="24" selection-start="1898" selection-end="1898" vertical-scroll-proportion="60.48148" vertical-offset="2497" max-vertical-offset="3348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/models/DashboardModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/models/ArduinoHomeModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="13" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="36" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/DashboardView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="10" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/ZoeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="35" selection-start="470" selection-end="470" vertical-scroll-proportion="0.32801822" vertical-offset="0" max-vertical-offset="878">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>

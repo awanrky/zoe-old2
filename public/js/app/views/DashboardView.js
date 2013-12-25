@@ -1,11 +1,26 @@
 /**
  * Created by mark on 12/24/13.
  */
-define(['jquery', 'backbone', 'models/DashboardModel', 'text!templates/Dashboard.html'],
+define([
+    'jquery',
+    'backbone',
+    'underscore',
+    'views/ZoeView',
+    'models/DashboardModel',
+    'text!templates/Dashboard.html'
+],
 
-    function($, Backbone, DashboardModel, dashboardTemplate){
+    function(
+        $,
+        Backbone,
+        _,
+        ZoeView,
+        DashboardModel,
+        dashboardTemplate
+    ){
+        'use strict';
 
-        return Backbone.View.extend({
+        return ZoeView.extend({
 
             el: '.magic',
 
@@ -25,6 +40,8 @@ define(['jquery', 'backbone', 'models/DashboardModel', 'text!templates/Dashboard
                 this.template = _.template(dashboardTemplate, {});
 
                 this.$el.html(this.template);
+
+                this.setNavBarItemActive();
 
                 return this;
 

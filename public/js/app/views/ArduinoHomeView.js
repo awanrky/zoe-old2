@@ -1,11 +1,26 @@
 /**
  * Created by mark on 12/24/13.
  */
-define(['jquery', 'backbone', 'models/ArduinoHomeModel', 'text!templates/ArduinoHome.html'],
+define([
+    'jquery',
+    'backbone',
+    'underscore',
+    'views/ZoeView',
+    'models/ArduinoHomeModel',
+    'text!templates/ArduinoHome.html'
+],
 
-    function($, Backbone, ArduinoHomeModel, ArduinoHomeTemplate){
+    function(
+        $,
+        Backbone,
+        _,
+        ZoeView,
+        ArduinoHomeModel,
+        ArduinoHomeTemplate
+    ){
+        'use strict';
 
-        return Backbone.View.extend({
+        return ZoeView.extend({
 
             el: '.magic',
 
@@ -22,6 +37,8 @@ define(['jquery', 'backbone', 'models/ArduinoHomeModel', 'text!templates/Arduino
                 this.template = _.template(ArduinoHomeTemplate, {});
 
                 this.$el.html(this.template);
+
+                this.setNavBarItemActive();
 
                 return this;
 
