@@ -41,7 +41,9 @@ require.config({
 
         'views': 'app/views',
 
-        'events': 'app/events'
+        'events': 'app/events',
+
+        'gaugejs': 'libs/gaugejs/gauge.min'
 
     },
 
@@ -63,7 +65,11 @@ require.config({
         },
 
         // Backbone.validateAll plugin that depends on Backbone
-        'backbone.validateAll': ['backbone']
+        'backbone.validateAll': ['backbone'],
+
+        'gaugejs': {
+            'exports': 'Gauge'
+        }
 
     }
 
@@ -73,6 +79,7 @@ require.config({
 require(['jquery', 'backbone', 'routers/Router', 'bootstrap', 'backbone.validateAll'],
 
     function ($, Backbone, Router) {
+        'use strict';
 
         // Instantiates a new Desktop Router instance
         new Router();

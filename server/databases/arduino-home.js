@@ -7,8 +7,6 @@ var config = require('../config/config.js').config;
 var connection = require('./connection');
 var mongoose = require('mongoose');
 
-console.log('arduinoHomeDatabase: ' + config.arduinoHomeDatabase);
-
 var arduinoHomeMongooseConnection = mongoose.createConnection(
     connection.getConnectionString(config.arduinoHomeDatabase)
 );

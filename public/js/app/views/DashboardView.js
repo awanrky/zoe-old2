@@ -7,6 +7,7 @@ define([
     'underscore',
     'views/ZoeView',
     'models/DashboardModel',
+    'views/arduino-home/gauges/DhtGaugeView',
     'text!templates/Dashboard.html'
 ],
 
@@ -16,6 +17,7 @@ define([
         _,
         ZoeView,
         DashboardModel,
+        DhtGaugeView,
         dashboardTemplate
     ){
         'use strict';
@@ -39,6 +41,10 @@ define([
                 this.template = _.template(dashboardTemplate, {});
 
                 this.$el.html(this.template);
+                this.dhtGaugeView = new DhtGaugeView({
+                    el: '#dht-gauge-view'
+                });
+
 
                 return this;
 
