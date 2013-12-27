@@ -35,11 +35,19 @@ module.exports.api = function(server) {
             });
     }
 
-    server.get(route.getPath('last/:count'), function(req, res) {
-        schema.find().sort({datetime: -1}).limit(req.params.params).exec(function(error, documents) {
-            if (error) { res.send(400, {error: error.message}); return; }
-            res.send(documents);
-        });
+    server.get(route.getPath('last/:sensorName/:count'), function(req, res) {
+        schema
+            .find({sensorName: req.params.sensorName})
+            .sort({datetime: -1})
+            .limit(req.params.count)
+            .exec(function(error, documents) {
+                if (error) {
+                    res.send(400, {error: error.message});
+                    return;
+                }
+                res.send(documents);
+            }
+        );
     });
 
     server.get(route.getPath('hourly/:hours'), function(req, res) {

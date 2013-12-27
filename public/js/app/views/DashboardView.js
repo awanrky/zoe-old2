@@ -7,7 +7,8 @@ define([
     'underscore',
     'views/ZoeView',
     'models/DashboardModel',
-    'views/arduino-home/gauges/DhtGaugeView',
+    'views/arduino-home/gauges/DhtGaugeOutdoorDeckView',
+    'views/arduino-home/gauges/DhtGaugeIndoorView',
     'text!templates/Dashboard.html'
 ],
 
@@ -17,34 +18,27 @@ define([
         _,
         ZoeView,
         DashboardModel,
-        DhtGaugeView,
+        DhtGaugeOutdoorView,
+        DhtGaugeIndoorView,
         dashboardTemplate
     ){
         'use strict';
 
         return ZoeView.extend({
 
-//            el: '.magic',
-
-//            initialize: function() {
-//
-//                this.render();
-//
-//            },
-
-            events: {
-
-            },
-
             render: function() {
 
                 this.template = _.template(dashboardTemplate, {});
 
                 this.$el.html(this.template);
-                this.dhtGaugeView = new DhtGaugeView({
-                    el: '#dht-gauge-view'
+
+                this.dhtGaugeOutdoorView = new DhtGaugeOutdoorView({
+                    el: '#dht-gauge-outdoor-view'
                 });
 
+                this.dhtGaugeIndoorView = new DhtGaugeIndoorView({
+                    el: '#dht-gauge-indoor-view'
+                });
 
                 return this;
 

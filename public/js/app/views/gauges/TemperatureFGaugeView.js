@@ -5,57 +5,40 @@ define([
     'jquery',
     'backbone',
     'underscore',
-    'gaugejs',
-    'text!templates/gauges/Gauge.html'
+    'events/Notifier',
+    'views/gauges/GaugeView'
 ],
     function(
         $,
         Backbone,
         _,
-        Gauge,
-        GaugeTemplate
+        Notifier,
+        GaugeView
         ) {
         'use strict';
 
-        return Backbone.View.extend({
-
-            initialize: function() {
-                this.render();
-            },
+        return GaugeView.extend({
 
             renderGauge: function(options) {
-                this.template = _.template(GaugeTemplate, {
-                    gaugeName: options.gaugeName
-                });
-
-                this.$el.html(this.template);
-
-                this.gauge = new Gauge(this.$el.children('div').children('canvas')[0])
-                    .setOptions(_.extend({
-                        lines: 12,
-                        angle: 0.15,
-                        lineWidth: 0.44,
-                        pointer: {
-                            length: 0.56,
-                            strokeWidth: 0.031,
-                            color: '#000000'
-                        },
-                        limitMax: false,
-                        colorStart: '#6FADCF',
-                        colorStop: '#8FC0DA',
-                        strokeColor: '#E0E0E0',
-                        generateGradient: true
-                    }, options));
+                this.superRenderGauge(_.extend({
+                    colorStart: '#0000FF',
+                    colorStop: '#FF0000'
+                }, options));
                 this.gauge.minValue = 0;
                 this.gauge.maxValue = 110;
-                this.gauge.animationSpeed = 66;
-                this.gauge.setTextField(this.$el
-                    .children('div')
-                    .children('div')
-                    .children('.gauge-text')[0]);
-//                this.gauge.set(33);
+            },
 
-                return this;
+            bindEvents: function() {
+                var that = this;
+
+                this.listenTo(this.model, 'change', function() {
+                    that.gauge.set(that.model.getDegreesFahrenheit());
+                });
+                this.model.fetch();
+
+                this.listenTo(Notifier, 'onMinute0', function() {
+                    that.model.fetch();
+                });
             }
 
         });

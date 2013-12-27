@@ -5,28 +5,33 @@ define([
     'jquery',
     'backbone',
     'underscore',
-    'gaugejs',
     'views/gauges/TemperatureFGaugeView',
-    'models/arduino-home/gauges/DhtGaugeModel'
+    'models/arduino-home/gauges/DhtGaugeOutdoorDeckModel'
 ],
     function(
         $,
         Backbone,
         _,
-        Gauge,
         TemperatureFGaugeView,
-        DhtGaugeModel
+        DhtGaugeOutdoorDeckModel
     ) {
         'use strict';
 
         return TemperatureFGaugeView.extend({
 
+            initialize: function() {
+
+                this.model = new DhtGaugeOutdoorDeckModel();
+
+                this.render();
+
+                this.bindEvents();
+            },
+
             render: function() {
                 this.renderGauge({
-                    gaugeName: 'Indoor Temperature'
+                    gaugeName: 'Outdoor Temperature'
                 });
-
-                this.gauge.set(109);
 
                 return this;
             }
