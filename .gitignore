@@ -3,3 +3,4 @@ public/js/libs/*
 !public/js/libs/plugins
 !public/js/libs/gaugejs
 server/config/config.js
+public/fonts/*

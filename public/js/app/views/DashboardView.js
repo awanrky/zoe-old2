@@ -9,6 +9,8 @@ define([
     'models/DashboardModel',
     'views/arduino-home/gauges/DhtGaugeOutdoorDeckView',
     'views/arduino-home/gauges/DhtGaugeIndoorView',
+    'views/arduino-home/gauges/DhtHumidityOutdoorGaugeView',
+    'views/arduino-home/gauges/DhtHumidityIndoorGaugeView',
     'text!templates/Dashboard.html'
 ],
 
@@ -20,6 +22,8 @@ define([
         DashboardModel,
         DhtGaugeOutdoorView,
         DhtGaugeIndoorView,
+        DhtHumidityOutdoorGaugeView,
+        DhtHumidityIndoorGaugeView,
         dashboardTemplate
     ){
         'use strict';
@@ -38,6 +42,14 @@ define([
 
                 this.dhtGaugeIndoorView = new DhtGaugeIndoorView({
                     el: '#dht-gauge-indoor-view'
+                });
+
+                this.dhtHumidityOutdoorGaugeView = new DhtHumidityOutdoorGaugeView({
+                    el: '#dht-humidity-outdoor-gauge-view'
+                });
+
+                this.dhtHumidityIndoorGaugeView = new DhtHumidityIndoorGaugeView({
+                    el: '#dht-humidity-indoor-gauge-view'
                 });
 
                 return this;

@@ -75,7 +75,10 @@ module.exports = function (grunt) {
                 command: 'cp ./public/js/libs/font-awesome/css/font-awesome.css ./public/css/font-awesome.css'
             },
             copyFontAwesomeFonts: {
-                command: 'cp -r ./public/js/libs/font-awesome/font/* ./public/font'
+                command: 'cp -r ./public/js/libs/font-awesome/fonts/* ./public/fonts'
+            },
+            copyCanvasGaugeFonts: {
+                command: 'cp -r ./public/js/libs/canvas-gauge/fonts/* ./public/fonts'
             }
         },
         less: {
