@@ -11,6 +11,8 @@ define([
     'views/arduino-home/gauges/DhtGaugeIndoorView',
     'views/arduino-home/gauges/DhtHumidityOutdoorGaugeView',
     'views/arduino-home/gauges/DhtHumidityIndoorGaugeView',
+    'views/arduino-home/gauges/Cd5LightIntensityOutdoorGaugeView',
+    'views/arduino-home/gauges/Cd5LightIntensityIndoorGaugeView',
     'text!templates/Dashboard.html'
 ],
 
@@ -24,6 +26,8 @@ define([
         DhtGaugeIndoorView,
         DhtHumidityOutdoorGaugeView,
         DhtHumidityIndoorGaugeView,
+        Cd5LightIntensityOutdoorGaugeView,
+        Cd5LightIntensityIndoorGaugeView,
         dashboardTemplate
     ){
         'use strict';
@@ -50,6 +54,14 @@ define([
 
                 this.dhtHumidityIndoorGaugeView = new DhtHumidityIndoorGaugeView({
                     el: '#dht-humidity-indoor-gauge-view'
+                });
+
+                this.cd5LightIntensityOutdoorGaugeView = new Cd5LightIntensityOutdoorGaugeView({
+                    el: '#cd5-light-intensity-outdoor-gauge-view'
+                });
+
+                this.cd5LightIntensityIndoorGaugeView = new Cd5LightIntensityIndoorGaugeView({
+                    el: '#cd5-light-intensity-indoor-gauge-view'
                 });
 
                 return this;

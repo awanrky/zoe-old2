@@ -30,4 +30,19 @@ module.exports.api = function(server) {
     server.get(route.getPath('daterange/:start'), getDaterange);
     server.get(route.getPath('daterange/:start/:end'), getDaterange);
 
+    server.get(route.getPath('last/:sensorName/:count'), function(req, res) {
+        schema
+            .find({sensorName: req.params.sensorName})
+            .sort({datetime: -1})
+            .limit(req.params.count)
+            .exec(function(error, documents) {
+                if (error) {
+                    res.send(400, {error: error.message});
+                    return;
+                }
+                res.send(documents);
+            }
+        );
+    });
+
 };
