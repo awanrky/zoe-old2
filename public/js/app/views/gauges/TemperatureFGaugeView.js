@@ -21,8 +21,19 @@ define([
 
             renderGauge: function(options) {
                 this.superRenderGauge(_.extend({
-                    colorStart: '#0000FF',
-                    colorStop: '#FF0000'
+                    units: '°F',
+                    minValue: 20,
+                    maxValue: 110,
+                    majorTicks: ['20', '30', '40', '50', '60', '70', '80', '90', '100', '110'],
+                    valueFormat: { int: 2, dec: 1 },
+                    highlights: [
+                        {from: 20, to: 32, color: '#00f'},
+                        {from: 32, to: 50, color: '#f0f'},
+                        {from: 50, to: 60, color: '#f07'},
+                        {from: 60, to: 80, color: '#f55'},
+                        {from: 80, to: 100, color: '#f00'},
+                        {from: 100, to: 110, color: '#c00'}
+                    ]
                 }, options));
                 this.gauge.minValue = 0;
                 this.gauge.maxValue = 110;
@@ -32,7 +43,7 @@ define([
                 var that = this;
 
                 this.listenTo(this.model, 'change', function() {
-                    that.gauge.set(that.model.getDegreesFahrenheit());
+                    that.gauge.setValue(that.model.getDegreesFahrenheit());
                 });
                 this.model.fetch();
 

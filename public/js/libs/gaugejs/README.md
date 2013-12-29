@@ -1,1 +1,0 @@
-Project located at: http://bernii.github.io/gauge.js/

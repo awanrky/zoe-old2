@@ -30,7 +30,7 @@ define([
 
             render: function() {
                 this.renderGauge({
-                    gaugeName: 'Outdoor Temperature'
+                    title: 'Outdoor Temperature'
                 });
 
                 return this;

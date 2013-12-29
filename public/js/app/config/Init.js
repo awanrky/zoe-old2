@@ -43,8 +43,9 @@ require.config({
 
         'events': 'app/events',
 
-        'gaugejs': 'libs/gaugejs/gauge.min'
+//        'gaugejs': 'libs/gaugejs/gauge.min'
 
+        'canvas-gauge': 'libs/canvas-gauge/gauge'
     },
 
     // Sets the configuration for your third party scripts that are not AMD compatible
@@ -67,7 +68,11 @@ require.config({
         // Backbone.validateAll plugin that depends on Backbone
         'backbone.validateAll': ['backbone'],
 
-        'gaugejs': {
+//        'gaugejs': {
+//            'exports': 'Gauge'
+//        }
+
+        'canvas-gauge': {
             'exports': 'Gauge'
         }
 
