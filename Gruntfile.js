@@ -69,16 +69,26 @@ module.exports = function (grunt) {
         },
         shell: {
             copyBootstrapCSS: {
-                command: 'cp ./public/js/libs/bootstrap/dist/css/bootstrap.css ./public/css/bootstrap.css'
+                command: 'cp ./public/js/libs/bootstrap/dist/css/bootstrap.css ' +
+                    './public/css/bootstrap.css'
             },
             copyFontAwesomeCSS: {
-                command: 'cp ./public/js/libs/font-awesome/css/font-awesome.css ./public/css/font-awesome.css'
+                command: 'cp ./public/js/libs/font-awesome/css/font-awesome.css ' +
+                    './public/css/font-awesome.css'
             },
             copyFontAwesomeFonts: {
                 command: 'cp -r ./public/js/libs/font-awesome/fonts/* ./public/fonts'
             },
+            copyBootstrapDateRangePickerCSS: {
+                command: 'cp ' +
+                    './public/js/libs/bootstrap-daterangepicker/daterangepicker-bs3.css ' +
+                    './public/css/bootstrap-daterangepicker.css'
+            },
             copyCanvasGaugeFonts: {
                 command: 'cp -r ./public/js/libs/canvas-gauge/fonts/* ./public/fonts'
+            },
+            copyGlyphiconsFonts: {
+                command: 'cp ./public/js/libs/bootstrap/dist/fonts/* ./public/fonts'
             }
         },
         less: {
@@ -101,7 +111,14 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-mocha-test');
 
     grunt.registerTask('test', ['jshint', 'mochaTest' ]);
-    grunt.registerTask('init', ['shell:copyBootstrapCSS', 'shell:copyFontAwesomeCSS', 'shell:copyFontAwesomeFonts', 'less:production', 'requirejs:mainJS', 'requirejs:mainCSS']);
+    grunt.registerTask('init', [
+        'shell:copyBootstrapCSS',
+        'shell:copyFontAwesomeCSS',
+        'shell:copyFontAwesomeFonts',
+        'less:production',
+        'requirejs:mainJS',
+        'requirejs:mainCSS'
+    ]);
     grunt.registerTask('build', ['less:production', 'requirejs:mainJS', 'requirejs:mainCSS']);
     grunt.registerTask('server', ['nodemon:dev']);
     grunt.registerTask('default', ['init', 'test', 'build']);

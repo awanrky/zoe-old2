@@ -2,9 +2,28 @@
 /* ======== */
 
 @import url('bootstrap.css');
+@import url('bootstrap-daterangepicker.css');
 @import url('includes/css/custom.css');
 
 /* Font Awesome CSS */
 /* ================ */
 
 @import url("font-awesome.css");
+
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}

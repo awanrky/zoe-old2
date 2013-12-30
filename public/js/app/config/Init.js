@@ -43,9 +43,13 @@ require.config({
 
         'events': 'app/events',
 
-//        'gaugejs': 'libs/gaugejs/gauge.min'
+        'moment': 'libs/momentjs/min/moment.min',
 
-        'canvas-gauge': 'libs/canvas-gauge/gauge'
+        'bootstrap-daterangepicker': 'libs/bootstrap-daterangepicker/daterangepicker',
+
+        'canvas-gauge': 'libs/canvas-gauge/gauge.min',
+
+        'd3': 'libs/d3/d3.min'
     },
 
     // Sets the configuration for your third party scripts that are not AMD compatible
@@ -68,12 +72,16 @@ require.config({
         // Backbone.validateAll plugin that depends on Backbone
         'backbone.validateAll': ['backbone'],
 
-//        'gaugejs': {
-//            'exports': 'Gauge'
-//        }
+        'bootstrap-daterangepicker': {
+            'deps': ['bootstrap', 'moment', 'jquery' ]
+        },
 
         'canvas-gauge': {
             'exports': 'Gauge'
+        },
+
+        d3: {
+            exports: 'd3'
         }
 
     }

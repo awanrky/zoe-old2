@@ -2,7 +2,9 @@
   <dictionary name="mark">
     <words>
       <w>arduinohome</w>
+      <w>clearfix</w>
       <w>gaugejs</w>
+      <w>momentjs</w>
     </words>
   </dictionary>
 </component>

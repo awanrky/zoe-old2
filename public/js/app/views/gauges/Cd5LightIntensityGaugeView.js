@@ -27,11 +27,11 @@ define([
                     majorTicks: ['0', '200', '400', '600', '800', '1000'],
                     valueFormat: { int: 3, dec: 0 },
                     highlights: [
-                        {from: 0, to: 200, color: '#222'},
-                        {from: 200, to: 400, color: '#626'},
-                        {from: 400, to: 600, color: '#992'},
-                        {from: 600, to: 800, color: '#bb2'},
-                        {from: 800, to: 1000, color: '#ff2'}
+                        {from: 0, to: 400, color: '#222'},
+                        {from: 400, to: 650, color: '#626'},
+                        {from: 650, to: 850, color: '#992'},
+                        {from: 850, to: 950, color: '#cc2'},
+                        {from: 950, to: 1000, color: '#ff2'}
                     ]
                 }, options));
                 this.gauge.minValue = 0;

@@ -29,6 +29,9 @@
     "text": "latest",
     "bootstrap": "latest",
     "font-awesome": "latest",
-    "canvas-gauge": "git@github.com:Mikhus/canv-gauge.git"
+    "momentjs": "latest",
+    "bootstrap-daterangepicker": "latest",
+    "canvas-gauge": "git@github.com:Mikhus/canv-gauge.git",
+    "d3": "git@github.com:mbostock/d3.git#v3.3.13"
   }
 }
