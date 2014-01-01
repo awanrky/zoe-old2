@@ -15,7 +15,7 @@ define([
              _,
              d3,
              moment,
-             notifier,
+             Notifier,
              template){
         'use strict';
 
@@ -56,7 +56,7 @@ define([
             },
 
             initialize: function () {
-
+                this.bindEvents();
             },
 
             setDateRange: function(start, end) {
@@ -151,6 +151,19 @@ define([
                     .attr('d', line);
 
                 return this;
+            },
+
+            bindEvents: function() {
+                var that = this;
+
+                this.listenTo(Notifier, 'onMinute3', function() {
+                    that.fetch();
+                });
+
+                this.listenTo(Notifier, 'dateRangePickerUpdated', function(start, end) {
+                    that.setDateRange(start, end);
+                    that.fetch();
+                });
             }
 
         });

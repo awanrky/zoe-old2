@@ -43,7 +43,8 @@ define([
                 });
                 this.dateRangePicker.update(moment().startOf('day'));
 
-                this.dhtTemperatureMultiSeriesLineChartView = new DhtTemperatureMultiSeriesLineChartView({
+                this.dhtTemperatureMultiSeriesLineChartView =
+                    new DhtTemperatureMultiSeriesLineChartView({
                     el: '#dht-temperature-multi-series-line-chart'
                 });
                 this.dhtTemperatureMultiSeriesLineChartView.setDateRange(moment().startOf('day'));
@@ -53,10 +54,12 @@ define([
                 });
                 this.dhtHumidityMultiSeriesLineChartView.setDateRange(moment().startOf('day'));
 
-                this.cd5LightIntensityMultiSeriesLineChartView = new Cd5LightIntensityMultiSeriesLineChartView({
+                this.cd5LightIntensityMultiSeriesLineChartView =
+                    new Cd5LightIntensityMultiSeriesLineChartView({
                     el: '#cd5-light-intensity-multi-series-line-chart'
                 });
-                this.cd5LightIntensityMultiSeriesLineChartView.setDateRange(moment().startOf('day'));
+                this.cd5LightIntensityMultiSeriesLineChartView
+                    .setDateRange(moment().startOf('day'));
 
                 return this;
             }

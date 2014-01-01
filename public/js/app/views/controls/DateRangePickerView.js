@@ -6,6 +6,7 @@ define([
     'backbone',
     'underscore',
     'bootstrap-daterangepicker',
+    'events/Notifier',
     'text!templates/controls/DateRangePicker.html',
     'moment'
 ],
@@ -14,6 +15,7 @@ define([
         Backbone,
         _,
         bootstrapDateRangePicker,
+        Notifier,
         template,
         moment
     ){
@@ -38,6 +40,10 @@ define([
 
             render: function() {
                 return this.superRender({});
+            },
+
+            triggerUpdatedEvent: function(start, end) {
+                Notifier.trigger('dateRangePickerUpdated', start, end);
             },
 
             superRender: function(options) {
@@ -85,6 +91,7 @@ define([
                     that.end = end;
 
                     that.update(start, end);
+                    that.triggerUpdatedEvent(start, end);
                 });
 
                 return this;

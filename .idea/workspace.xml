@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fae70d3-9a53-4e65-a5c9-a3ee5ba1f2c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Cd5LightIntensityMultiSeriesLineChartView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/templates/controls/DateRangePicker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/DhtHumidityMultiSeriesLineChartView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/DhtTemperatureMultiSeriesLineChartView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/templates/charts/LineChart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/templates/charts/MultiSeriesLineChart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html" afterPath="$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" afterPath="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/gauges/Cd5LightIntensityGaugeView.js" afterPath="$PROJECT_DIR$/public/js/app/views/gauges/Cd5LightIntensityGaugeView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/models/arduino-home/DhtModel.js" afterPath="$PROJECT_DIR$/public/js/app/models/arduino-home/DhtModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js" afterPath="$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/config/Init.js" afterPath="$PROJECT_DIR$/public/js/app/config/Init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js" afterPath="$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js" afterPath="$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/mark.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/mark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="zoe.iws" />
@@ -42,157 +32,100 @@
     <favorites_list name="zoe" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="cd5.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/cd5.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="13" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="954">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DateRangePickerView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="14" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1782">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DateRangePicker.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/templates/controls/DateRangePicker.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GaugeView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/views/gauges/GaugeView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="51" column="33" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1332">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ArduinoHomeView.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="67" column="2" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.96428573" vertical-offset="342" max-vertical-offset="1314">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Cd5LightIntensityMultiSeriesLineChartView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Cd5LightIntensityMultiSeriesLineChartView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1116">
-                  <folding>
-                    <element signature="e#0#39#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DhtTemperatureMultiSeriesLineChartView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/DhtTemperatureMultiSeriesLineChartView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="59" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1188">
-                  <folding>
-                    <element signature="e#0#39#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Gauge.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/templates/gauges/Gauge.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="MultiSeriesLineChartView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="18" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="2790">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DhtHumidityMultiSeriesLineChartView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/DhtHumidityMultiSeriesLineChartView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="20" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ArduinoHome.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="79" selection-start="484" selection-end="484" vertical-scroll-proportion="0.20156775" vertical-offset="0" max-vertical-offset="893">
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bower.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="26" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="774">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="moment.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/libs/momentjs/moment.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="42642">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Init.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/config/Init.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="0" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1944">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DhtGaugeIndoorModel.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/app/models/arduino-home/gauges/DhtGaugeIndoorModel.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="2" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="504">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="MultiSeriesLineChartView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="34" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="2826">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LineChart.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/templates/charts/LineChart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateRangePickerView.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="69" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.5800215" vertical-offset="270" max-vertical-offset="1908">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LineChartView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="33" selection-start="4455" selection-end="4455" vertical-scroll-proportion="0.0" vertical-offset="2237" max-vertical-offset="3168">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArduinoHome.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="64" selection-start="202" selection-end="202" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="342">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cd5LightIntensityMultiSeriesLineChartView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Cd5LightIntensityMultiSeriesLineChartView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="1152">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArduinoHomeView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="64" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1368">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cd5LightIntensityIndoorGaugeView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/gauges/Cd5LightIntensityIndoorGaugeView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GaugeView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/gauges/GaugeView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1332">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HumidityGaugeView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/gauges/HumidityGaugeView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="42" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1098">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -210,28 +143,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/server/api/v1/arduino-home/cd5.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/gauges/Cd5LightIntensityGaugeView.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/public/js/app/config/Init.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/public/js/app/models/arduino-home/DhtModel.js" />
         <option value="$PROJECT_DIR$/public/js/app/templates/controls/DateRangePicker.html" />
         <option value="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/DhtHumidityMultiSeriesLineChartView.js" />
         <option value="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/DhtTemperatureMultiSeriesLineChartView.js" />
         <option value="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Cd5LightIntensityMultiSeriesLineChartView.js" />
-        <option value="$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html" />
+        <option value="$PROJECT_DIR$/server/config/config.js" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
+        <option value="$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js" />
+        <option value="$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html" />
+        <option value="$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js" />
+        <option value="$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3830" />
-    <option name="y" value="-32" />
+    <option name="x" value="3918" />
+    <option name="y" value="-14" />
     <option name="width" value="1940" />
     <option name="height" value="1122" />
   </component>
@@ -313,6 +246,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="arduino-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -909,7 +860,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3830" y="-32" width="1940" height="1122" extended-state="0" />
+    <frame x="3918" y="-14" width="1940" height="1122" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -970,16 +921,37 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/libs/momentjs/moment.js">
+    <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="42642">
+        <state line="69" column="40" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.84313726" vertical-offset="468" max-vertical-offset="1386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/templates/gauges/Gauge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/models/arduino-home/gauges/DhtGaugeIndoorModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="2" selection-start="332" selection-end="332" vertical-scroll-proportion="0.41465968" vertical-offset="0" max-vertical-offset="955">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="774">
+        <state line="29" column="26" selection-start="665" selection-end="665" vertical-scroll-proportion="-19.333334" vertical-offset="0" max-vertical-offset="774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/libs/momentjs/moment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="42642">
           <folding />
         </state>
       </provider>
@@ -991,99 +963,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="64" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/gauges/Cd5LightIntensityIndoorGaugeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/views/gauges/GaugeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="33" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="1296">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1332">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/gauges/HumidityGaugeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="61" selection-start="3157" selection-end="3157" vertical-scroll-proportion="0.13302752" vertical-offset="1504" max-vertical-offset="2376">
+        <state line="37" column="42" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1098">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2790">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="339" selection-end="339" vertical-scroll-proportion="0.3858521" vertical-offset="0" max-vertical-offset="933">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/models/arduino-home/DhtModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="156" selection-end="156" vertical-scroll-proportion="0.21221864" vertical-offset="0" max-vertical-offset="933">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap-daterangepicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4518">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="14" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/templates/controls/DateRangePicker.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/DhtTemperatureMultiSeriesLineChartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="59" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1188">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Cd5LightIntensityMultiSeriesLineChartView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1116">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/DhtHumidityMultiSeriesLineChartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/templates/ArduinoHome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="79" selection-start="484" selection-end="484" vertical-scroll-proportion="0.20156775" vertical-offset="0" max-vertical-offset="893">
+        <state line="5" column="64" selection-start="202" selection-end="202" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="342">
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="2" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.96428573" vertical-offset="342" max-vertical-offset="1314">
+        <state line="33" column="34" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="2826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/templates/charts/LineChart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="33" selection-start="4455" selection-end="4455" vertical-scroll-proportion="0.0" vertical-offset="2237" max-vertical-offset="3168">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="69" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.5800215" vertical-offset="270" max-vertical-offset="1908">
           <folding />
         </state>
       </provider>

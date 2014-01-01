@@ -30,6 +30,8 @@ define([
 
                 // skip the first color, I can't see the red/green difference
                 this.color.domain(['','degreesCelcius', 'humidity']);
+
+                this.bindEvents();
             },
 
             fetch: function () {

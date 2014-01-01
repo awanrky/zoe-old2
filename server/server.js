@@ -67,4 +67,5 @@ invalidapi.api(server);
 
 // Start Node.js Server
 http.createServer(server).listen(port);
+console.log('Server started on port: ' + port);
 
