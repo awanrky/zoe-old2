@@ -36,7 +36,7 @@ define([
 
             initialize: function(options) {
                 if (!options) { options = {}; }
-                this.start = options.start ? moment(options.start) : moment().startOf('day');
+                this.start = options.start ? moment(options.start) : moment().startOf('day').subtract('days', 1);
                 this.end = options.end ? moment(options.end) : moment().endOf('day');
 
                 this.render();
