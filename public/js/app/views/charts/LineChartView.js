@@ -120,6 +120,7 @@ define([
                     .x(function(d) { return x(d.date); })
                     .y(function(d) { return y(d.value); });
 
+                this.$el.clear();
                 var svg = d3.select('#' + that.el.id + ' div').append('svg')
                     .attr('width', this.width)
                     .attr('height', this.height)
