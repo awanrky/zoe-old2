@@ -33,8 +33,9 @@ define([
                 // When there is no hash on the url, the home method is called
                 '': 'dashboard',
                 'dashboard': 'dashboard',
-                'arduinohome': 'arduinoHome'
-
+                'arduino-home': 'arduinoHome',
+                'arduino-home/:start': 'arduinoHome',
+                'arduino-home/:start/:end': 'arduinoHome'
             },
 
             dashboard: function() {
@@ -42,8 +43,11 @@ define([
                 this.setNavBarItemActive('dashboard');
             },
 
-            arduinoHome: function() {
-                new ArduinoHomeView();
+            arduinoHome: function(start, end) {
+                new ArduinoHomeView({
+                    start: start,
+                    end: end
+                });
                 this.setNavBarItemActive('arduinohome');
             },
 

@@ -6,7 +6,7 @@ define(['jquery', 'backbone'],
     function($, Backbone){
         'use strict';
 
-        return Backbone.View.extend({
+        var ZoeView = Backbone.View.extend({
 
             el: '.magic',
 
@@ -14,10 +14,9 @@ define(['jquery', 'backbone'],
                 this.render();
             }
 
-
-
         });
 
-    }
 
+        return ZoeView;
+    }
 );

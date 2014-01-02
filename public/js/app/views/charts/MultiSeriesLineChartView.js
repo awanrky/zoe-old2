@@ -25,7 +25,8 @@ define([
 
             series: [],
 
-            initialize: function () {
+            initialize: function (options) {
+                this.setDateRange(moment(options.start), moment(options.end));
                 this.color = d3.scale.category10();
 
                 // skip the first color, I can't see the red/green difference

@@ -95,7 +95,7 @@ require(['jquery', 'backbone', 'routers/Router', 'bootstrap', 'backbone.validate
         'use strict';
 
         // Instantiates a new Desktop Router instance
-        new Router();
+        window.App = new Router();
 
     }
 

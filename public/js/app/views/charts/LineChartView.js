@@ -55,7 +55,8 @@ define([
                 ].join('/');
             },
 
-            initialize: function () {
+            initialize: function (options) {
+                this.setDateRange(moment(options.start), moment(options.end));
                 this.bindEvents();
             },
 
@@ -63,7 +64,6 @@ define([
                 this.start = start;
                 this.end = end;
                 this.params = formatParams(start, end);
-                this.fetch();
             },
 
             refresh: function() {

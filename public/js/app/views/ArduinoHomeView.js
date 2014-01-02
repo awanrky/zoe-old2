@@ -6,6 +6,7 @@ define([
     'backbone',
     'underscore',
     'moment',
+    'events/Notifier',
     'views/controls/DateRangePickerView',
     'views/ZoeView',
     'models/ArduinoHomeModel',
@@ -20,6 +21,7 @@ define([
         Backbone,
         _,
         moment,
+        Notifier,
         DateRangePickerView,
         ZoeView,
         ArduinoHomeModel,
@@ -32,6 +34,14 @@ define([
 
         return ZoeView.extend({
 
+            initialize: function(options) {
+                if (!options) { options = {}; }
+                this.start = options.start ? moment(options.start) : moment().startOf('day');
+                this.end = options.end ? moment(options.end) : moment().endOf('day');
+
+                this.render();
+            },
+
             render: function() {
 
                 this.template = _.template(ArduinoHomeTemplate, {});
@@ -41,25 +51,37 @@ define([
                 this.dateRangePicker = new DateRangePickerView({
                     el: '#arduino-home-date-range-picker'
                 });
-                this.dateRangePicker.update(moment().startOf('day'));
+                this.dateRangePicker.update(this.start, this.end);
+                this.listenTo(Notifier, 'dateRangePickerUpdated', function(start, end) {
+                    window.App.navigate('arduino-home/' +
+                        encodeURIComponent(moment(start).format()) + '/' +
+                        encodeURIComponent(moment(end).format()));
+                });
 
                 this.dhtTemperatureMultiSeriesLineChartView =
                     new DhtTemperatureMultiSeriesLineChartView({
-                    el: '#dht-temperature-multi-series-line-chart'
-                });
-                this.dhtTemperatureMultiSeriesLineChartView.setDateRange(moment().startOf('day'));
+                        el: '#dht-temperature-multi-series-line-chart',
+                        start: this.start,
+                        end: this.end
+                    }
+                );
+                this.dhtTemperatureMultiSeriesLineChartView.fetch();
 
                 this.dhtHumidityMultiSeriesLineChartView = new DhtHumidityMultiSeriesLineChartView({
-                    el: '#dht-humidity-multi-series-line-chart'
+                    el: '#dht-humidity-multi-series-line-chart',
+                    start: this.start,
+                    end: this.end
                 });
-                this.dhtHumidityMultiSeriesLineChartView.setDateRange(moment().startOf('day'));
+                this.dhtHumidityMultiSeriesLineChartView.fetch();
 
                 this.cd5LightIntensityMultiSeriesLineChartView =
                     new Cd5LightIntensityMultiSeriesLineChartView({
-                    el: '#cd5-light-intensity-multi-series-line-chart'
-                });
-                this.cd5LightIntensityMultiSeriesLineChartView
-                    .setDateRange(moment().startOf('day'));
+                        el: '#cd5-light-intensity-multi-series-line-chart',
+                        start: this.start,
+                        end: this.end
+                    }
+                );
+                this.cd5LightIntensityMultiSeriesLineChartView.fetch();
 
                 return this;
             }
