@@ -52,7 +52,11 @@ define([
 
             yLabel: 'Humidity',
 
-            series: seriesDataDefinition
+            series: seriesDataDefinition,
+
+            getYDomain: function() {
+                return [ 0, 100 ];
+            }
 
         });
     }

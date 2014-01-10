@@ -60,6 +60,21 @@ define([
 
             },
 
+            getYDomain: function(series) {
+                return [
+                    d3.min(series, function(c) {
+                        return d3.min(c.values, function(v) {
+                            return v.value;
+                        });
+                    }),
+                    d3.max(series, function(c) {
+                        return d3.max(c.values, function(v) {
+                            return v.value;
+                        });
+                    })
+                ]
+            },
+
             render: function () {
                 var that = this;
 
@@ -96,18 +111,7 @@ define([
                         this.margin.left + ',' + this.margin.top + ')');
 
                 x.domain(d3.extent(this.data, function(d) { return d.date; }));
-                y.domain([
-                    d3.min(this.series, function(c) {
-                        return d3.min(c.values, function(v) {
-                            return v.value;
-                        });
-                    }),
-                    d3.max(this.series, function(c) {
-                        return d3.max(c.values, function(v) {
-                            return v.value;
-                        });
-                    })
-                ]);
+                y.domain(this.getYDomain(this.series));
 
                 svg.append('g')
                     .attr('class', 'x axis')

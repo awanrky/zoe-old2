@@ -41,6 +41,10 @@ define([
 
             height: 250,
 
+            getYDomain: function(data) {
+                d3.extent(data, function(d) { return d.value; });
+            },
+
             getDataPoint: function(d) {
                 return d.value;
             },
@@ -129,7 +133,7 @@ define([
                         this.margin.left + ',' + this.margin.top + ')');
 
                 x.domain(d3.extent(this.data, function(d) { return d.date; }));
-                y.domain(d3.extent(this.data, function(d) { return d.value; }));
+                y.domain(this.getYDomain(this.data));
 
                 svg.append('g')
                     .attr('class', 'x axis')

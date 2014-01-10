@@ -52,7 +52,11 @@ define([
 
             yLabel: 'Light Intensity',
 
-            series: seriesDataDefinition
+            series: seriesDataDefinition,
+
+            getYDomain: function() {
+                return [ 0, 1000 ];
+            }
 
         });
     }

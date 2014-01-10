@@ -56,7 +56,11 @@ define([
 
             yLabel: 'Temperature',
 
-            series: seriesDataDefinition
+            series: seriesDataDefinition,
+
+            getYDomain: function() {
+                return [10, 110];
+            }
 
         });
     }
