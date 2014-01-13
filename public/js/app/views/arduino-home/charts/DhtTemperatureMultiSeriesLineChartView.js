@@ -59,7 +59,7 @@ define([
             series: seriesDataDefinition,
 
             getYDomain: function() {
-                return [10, 110];
+                return [30, 100];
             }
 
         });

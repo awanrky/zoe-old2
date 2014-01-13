@@ -33,4 +33,19 @@ module.exports.api = function(server) {
                 res.send(documents);
             });
     }
+
+    server.post(route.getPath(), function(req, res) {
+        new schema({
+            sensorType: 'TSL2561',
+            datetime: req.body.datetime || new Date(),
+            sensorName: req.body.sensorName,
+            hectoPascals: req.body.hectoPascals,
+            degreesCelcius: req.body.degreesCelcius
+        }).save(function(error) {
+                if (error) {
+                    res.send(500, {error: error.message});
+                }
+                res.send(201);
+            });
+    });
 };

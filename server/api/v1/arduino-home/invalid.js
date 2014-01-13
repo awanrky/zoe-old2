@@ -33,4 +33,18 @@ module.exports.api = function(server) {
     server.get(route.getPath('daterange/:start'), getDaterange);
     server.get(route.getPath('daterange/:start/:end'), getDaterange);
 
+    server.post(route.getPath(), function(req, res) {
+        new schema({
+            sensorType: 'invalid',
+            datetime: req.body.datetime || new Date(),
+            data: req.body.data,
+            returnedType: req.body.returnedType
+        }).save(function(error) {
+            if (error) {
+                res.send(500, {error: error.message});
+            }
+            res.send(201);
+        });
+    });
+
 };

@@ -1,15 +1,17 @@
+/**
+ * Created by mark on 1/12/14.
+ */
 'use strict';
 
 var Route = require('./../route');
-var schema = require('../../../schemas/arduino-home/cd5');
+var schema = require('../../../schemas/arduino-home/bmp180');
 
-var route = new Route('arduino-home/cd5');
+var route = new Route('arduino-home/bmp180');
 
 module.exports.api = function(server) {
-
-    server.get(route.getPath('id/:id'), function(req, res){
-        schema.findById(req.params.id, function(err, docs){
-            if (err) { res.send(400, {error: err.message}); return; }
+    server.get(route.getPath('id/:id'), function(req, res) {
+        schema.findById(req.params.id, function(err, docs) {
+            if(err) { res.send(400, {error: err.message}); return; }
             res.send(docs);
         });
     });
@@ -21,12 +23,13 @@ module.exports.api = function(server) {
         schema
             .find({datetime: {$gt: startDate}})
             .find({datetime: {$lt: endDate}})
-            .select('sensorName datetime reading')
+            .select('sensorName datetime hectoPascals degreesCelcius')
             .exec(function(error, documents) {
                 if (error) { res.send(400, {error: error.message}); return; }
                 res.send(documents);
             });
     }
+
     server.get(route.getPath('daterange/:start'), getDaterange);
     server.get(route.getPath('daterange/:start/:end'), getDaterange);
 
@@ -36,7 +39,7 @@ module.exports.api = function(server) {
             .sort({datetime: -1})
             .limit(req.params.count)
             .exec(function(error, documents) {
-                if (error) {
+                if(error) {
                     res.send(400, {error: error.message});
                     return;
                 }
@@ -47,11 +50,11 @@ module.exports.api = function(server) {
 
     server.post(route.getPath(), function(req, res) {
         new schema({
-            sensorType: 'Cd5',
+            sensorType: 'BMP180',
             datetime: req.body.datetime || new Date(),
             sensorName: req.body.sensorName,
-            sensorPin: req.body.sensorPin,
-            reading: req.body.reading
+            hectoPascals: req.body.hectoPascals,
+            degreesCelcius: req.body.degreesCelcius
         }).save(function(error) {
             if (error) {
                 res.send(500, {error: error.message});
@@ -59,5 +62,4 @@ module.exports.api = function(server) {
             res.send(201);
         });
     });
-
 };

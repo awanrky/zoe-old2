@@ -95,20 +95,18 @@ module.exports.api = function(server) {
     });
 
     server.post(route.getPath(), function(req, res) {
-        var dht = new schema({
+        new schema({
+            sensorType: 'DHT',
+            datetime: req.body.datetime || new Date(),
+            sensorName: req.body.sensorName,
+            sensorPin: req.body.sensorPin,
             humidity: req.body.humidity,
-            degreesCelcius: req.body.degreesCelcius,
-            date: req.body.date || new Date(),
-            sensorName: req.body.sensorName
-        });
-
-        dht.save(function(error, newDht) {
+            degreesCelcius: req.body.degreesCelcius
+        }).save(function(error) {
             if (error) {
-                res.send(500, { error: error.message });
-                return;
+                res.send(500, {error: error.message});
             }
-
-            res.send(newDht);
+            res.send(201);
         });
     });
 

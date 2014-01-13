@@ -43,20 +43,18 @@ module.exports.api = function(server) {
     });
 
     server.post(route.getPath(), function(req, res) {
-        var tmp36 = new schema({
+        new schema({
             volts: req.body.volts,
             degreesCelcius: req.body.degreesCelcius,
-            date: req.body.date || new Date(),
-            sensorName: req.body.sensorName
-        });
-
-        tmp36.save(function(error, newTmp36) {
+            datetime: req.body.datetime || new Date(),
+            sensorName: req.body.sensorName,
+            sensorType: 'TMP36'
+        }).save(function(error) {
             if (error) {
                 res.send(500, { error: error.message });
                 return;
             }
-
-            res.send(newTmp36);
+            res.send(201);
         });
     });
 
