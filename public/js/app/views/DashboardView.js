@@ -13,6 +13,7 @@ define([
     'views/arduino-home/gauges/DhtHumidityIndoorGaugeView',
     'views/arduino-home/gauges/Cd5LightIntensityOutdoorGaugeView',
     'views/arduino-home/gauges/Cd5LightIntensityIndoorGaugeView',
+    'views/arduino-home/gauges/Bmp180BarometricPressureOutdoorGaugeView',
     'text!templates/Dashboard.html'
 ],
 
@@ -28,6 +29,7 @@ define([
         DhtHumidityIndoorGaugeView,
         Cd5LightIntensityOutdoorGaugeView,
         Cd5LightIntensityIndoorGaugeView,
+        Bmp180BarometricPressureOutdoorGaugeView,
         dashboardTemplate
     ){
         'use strict';
@@ -62,6 +64,10 @@ define([
 
                 this.cd5LightIntensityIndoorGaugeView = new Cd5LightIntensityIndoorGaugeView({
                     el: '#cd5-light-intensity-indoor-gauge-view'
+                });
+
+                this.bmp180BarometricPressureLineChartView = new Bmp180BarometricPressureOutdoorGaugeView({
+                    el: '#bmp180-barometric-pressure-outdoor-gauge-view'
                 });
 
                 return this;

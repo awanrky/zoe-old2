@@ -13,7 +13,8 @@ define([
     'text!templates/ArduinoHome.html',
     'views/arduino-home/charts/DhtTemperatureMultiSeriesLineChartView',
     'views/arduino-home/charts/DhtHumidityMultiSeriesLineChartView',
-    'views/arduino-home/charts/Cd5LightIntensityMultiSeriesLineChartView'
+    'views/arduino-home/charts/Cd5LightIntensityMultiSeriesLineChartView',
+    'views/arduino-home/charts/Bmp180BarometricPressureLineChartView'
 ],
 
     function(
@@ -28,7 +29,8 @@ define([
         ArduinoHomeTemplate,
         DhtTemperatureMultiSeriesLineChartView,
         DhtHumidityMultiSeriesLineChartView,
-        Cd5LightIntensityMultiSeriesLineChartView
+        Cd5LightIntensityMultiSeriesLineChartView,
+        Bmp180BarometricPressureLineChartView
     ){
         'use strict';
 
@@ -66,6 +68,15 @@ define([
                     }
                 );
                 this.dhtTemperatureMultiSeriesLineChartView.fetch();
+
+                this.bmp180BarometricPressureLineChartView =
+                    new Bmp180BarometricPressureLineChartView({
+                        el: '#bmp180-barometric-pressure-line-chart',
+                        start: this.start,
+                        end: this.end
+                    }
+                );
+                this.bmp180BarometricPressureLineChartView.fetch();
 
                 this.dhtHumidityMultiSeriesLineChartView = new DhtHumidityMultiSeriesLineChartView({
                     el: '#dht-humidity-multi-series-line-chart',
