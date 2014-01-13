@@ -54,7 +54,8 @@ module.exports.api = function(server) {
             datetime: req.body.datetime || new Date(),
             sensorName: req.body.sensorName,
             hectoPascals: req.body.hectoPascals,
-            degreesCelcius: req.body.degreesCelcius
+            degreesCelcius: req.body.degreesCelcius,
+            altitudeInMeters: req.body.altitudeInMeters
         }).save(function(error) {
             if (error) {
                 res.send(500, {error: error.message});

@@ -10,7 +10,8 @@ var bmp180Schema = new Schema({
     datetime: { type: Date, default: null },
     data: { type: String, default: null },
     hectoPascals: { type: Number, default: null },
-    degreesCelcius: { type: Number, default: null }
+    degreesCelcius: { type: Number, default: null },
+    altitudeInMeters: { type: Number, default: null }
 });
 
 bmp180Schema.index({datetime: 1, type: -1});
