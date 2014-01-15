@@ -50,7 +50,7 @@ define([
 
             yLabel: 'Barometric Pressure (hPa)',
 
-            getYDomain: function(){return[950, 1050];},
+//            getYDomain: function(){return[970, 1000];},
 
             series: seriesDataDefinition
 

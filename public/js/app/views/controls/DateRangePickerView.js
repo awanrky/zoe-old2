@@ -30,16 +30,17 @@ define([
 
         return Backbone.View.extend({
 
-            initialize: function() {
-                this.render();
+            initialize: function(options) {
+                this.elementId = options.elementId;
             },
 
             update: function(start, end) {
                 this.$el.children('div').children('span').html(format(start, end));
+                return this;
             },
 
-            render: function() {
-                return this.superRender({});
+            render: function(options) {
+                return this.superRender(options);
             },
 
             triggerUpdatedEvent: function(start, end) {

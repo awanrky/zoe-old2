@@ -36,63 +36,87 @@ define([
 
         return ZoeView.extend({
 
-            initialize: function(options) {
-                if (!options) { options = {}; }
-                this.start = options.start ? moment(options.start) : moment().startOf('day').subtract('days', 1);
-                this.end = options.end ? moment(options.end) : moment().endOf('day');
-
-                this.render();
-            },
-
-            render: function() {
-
-                this.template = _.template(ArduinoHomeTemplate, {});
-
-                this.$el.html(this.template);
-
-                this.dateRangePicker = new DateRangePickerView({
-                    el: '#arduino-home-date-range-picker'
-                });
-                this.dateRangePicker.update(this.start, this.end);
+            initialize: function() {
                 this.listenTo(Notifier, 'dateRangePickerUpdated', function(start, end) {
                     window.App.navigate('arduino-home/' +
                         encodeURIComponent(moment(start).format()) + '/' +
                         encodeURIComponent(moment(end).format()));
                 });
+            },
 
-                this.dhtTemperatureMultiSeriesLineChartView =
-                    new DhtTemperatureMultiSeriesLineChartView({
-                        el: '#dht-temperature-multi-series-line-chart',
-                        start: this.start,
-                        end: this.end
-                    }
-                );
-                this.dhtTemperatureMultiSeriesLineChartView.fetch();
+            getDateRangePickerView: (function() {
+                var view;
+                return function() {
+                    return view || (view = new DateRangePickerView({
+                        elementId: 'arduino-home-date-range-picker'
+                    }));
+                };
+            }()),
 
-                this.bmp180BarometricPressureLineChartView =
-                    new Bmp180BarometricPressureLineChartView({
-                        el: '#bmp180-barometric-pressure-line-chart',
-                        start: this.start,
-                        end: this.end
-                    }
-                );
-                this.bmp180BarometricPressureLineChartView.fetch();
+            getDhtTemperatureMultiSeriesLineChartView: (function() {
+                var view;
+                return function() {
+                    return view || (view = new DhtTemperatureMultiSeriesLineChartView({
+                        elementId: 'dht-temperature-multi-series-line-chart'
+                    }));
+                };
+            }()),
 
-                this.dhtHumidityMultiSeriesLineChartView = new DhtHumidityMultiSeriesLineChartView({
-                    el: '#dht-humidity-multi-series-line-chart',
-                    start: this.start,
-                    end: this.end
-                });
-                this.dhtHumidityMultiSeriesLineChartView.fetch();
+            getBmp180BarometricPressureLineChartView: (function() {
+                var view;
+                return function() {
+                    return view || (view = new Bmp180BarometricPressureLineChartView({
+                        elementId: 'bmp180-barometric-pressure-line-chart'
+                    }));
+                };
+            }()),
 
-                this.cd5LightIntensityMultiSeriesLineChartView =
-                    new Cd5LightIntensityMultiSeriesLineChartView({
-                        el: '#cd5-light-intensity-multi-series-line-chart',
-                        start: this.start,
-                        end: this.end
-                    }
-                );
-                this.cd5LightIntensityMultiSeriesLineChartView.fetch();
+            getDhtHumidityMultiSeriesLineChartView: (function() {
+                var view;
+                return function() {
+                    return view || (view = new DhtHumidityMultiSeriesLineChartView({
+                        elementId: 'dht-humidity-multi-series-line-chart'
+                    }));
+                };
+            }()),
+
+            getCd5LightIntensityMultiSeriesLineChartView: (function() {
+                var view;
+                return function() {
+                    return view || (view = new Cd5LightIntensityMultiSeriesLineChartView({
+                        elementId: 'cd5-light-intensity-multi-series-line-chart'
+                    }));
+                };
+            }()),
+
+            assign: function(view) {
+                view.setElement(this.$('#' + view.elementId));
+                return view;
+            },
+
+            render: function(options) {
+
+                if (!options) { options = {}; }
+                this.start = options.start ?
+                    moment(options.start) :
+                    moment().startOf('day').subtract('days', 1);
+                this.end = options.end ?
+                    moment(options.end) :
+                    moment().endOf('day');
+
+                this.template = _.template(ArduinoHomeTemplate, {});
+
+                this.$el.html(this.template);
+
+                this.assign(this.getDateRangePickerView()).render().update(this.start, this.end);
+
+                this.assign(this.getDhtTemperatureMultiSeriesLineChartView()).fetch();
+
+                this.assign(this.getBmp180BarometricPressureLineChartView()).fetch();
+
+                this.assign(this.getDhtHumidityMultiSeriesLineChartView()).fetch();
+
+                this.assign(this.getCd5LightIntensityMultiSeriesLineChartView()).fetch();
 
                 return this;
             }

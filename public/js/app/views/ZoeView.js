@@ -8,11 +8,7 @@ define(['jquery', 'backbone'],
 
         var ZoeView = Backbone.View.extend({
 
-            el: '.magic',
-
-            initialize: function() {
-                this.render();
-            }
+            el: '.magic'
 
         });
 

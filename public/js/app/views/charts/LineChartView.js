@@ -55,7 +55,7 @@ define([
                 return [
                     this.url,
                     this.path,
-                    this.params
+                    formatParams(this.start, this.end)
                 ].join('/');
             },
 
@@ -64,19 +64,15 @@ define([
                 this.bindEvents();
             },
 
-            setDateRange: function(start, end) {
-                this.start = start;
-                this.end = end;
-                this.params = formatParams(start, end);
-            },
-
             refresh: function() {
                 if (!this.start) { return; }
                 if (!!this.end && (this.end < moment())) { return; }
                 this.fetch();
             },
 
-            fetch: function () {
+            fetch: function (start, end) {
+                this.start = start;
+                this.end = end;
                 var that = this;
 
                 d3.json(this.route(), function(error, data) {
@@ -124,7 +120,6 @@ define([
                     .x(function(d) { return x(d.date); })
                     .y(function(d) { return y(d.value); });
 
-//                this.$el.clear();
                 var svg = d3.select('#' + that.el.id + ' div').append('svg')
                     .attr('width', this.width)
                     .attr('height', this.height)
@@ -159,15 +154,19 @@ define([
             },
 
             bindEvents: function() {
+                console.log('bindEvents ' + this.el.id);
                 var that = this;
 
+                this.stopListening(Notifier);
+
                 this.listenTo(Notifier, 'onMinute3', function() {
-                    that.fetch();
+                    console.log('onMinute3 ' + that.el.id);
+                    that.fetch(this.start, this.end);
                 });
 
                 this.listenTo(Notifier, 'dateRangePickerUpdated', function(start, end) {
-                    that.setDateRange(start, end);
-                    that.fetch();
+                    console.log('dateRangePickerUpdated ' + that.el.id);
+                    that.fetch(start, end);
                 });
             }
 

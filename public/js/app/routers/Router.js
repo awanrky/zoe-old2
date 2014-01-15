@@ -38,13 +38,27 @@ define([
                 'arduino-home/:start/:end': 'arduinoHome'
             },
 
+            getDashboardView: (function() {
+                var view;
+                return function() {
+                    return view || (view = new DashboardView());
+                };
+            }()),
+
+            getArduinoHomeView: (function() {
+                var view;
+                return function() {
+                    return view || (view = new ArduinoHomeView());
+                };
+            }()),
+
             dashboard: function() {
-                new DashboardView();
+                this.getDashboardView().render();
                 this.setNavBarItemActive('dashboard');
             },
 
             arduinoHome: function(start, end) {
-                new ArduinoHomeView({
+                this.getArduinoHomeView().render({
                     start: start,
                     end: end
                 });

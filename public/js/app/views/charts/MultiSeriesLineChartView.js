@@ -26,8 +26,8 @@ define([
             series: [],
 
             initialize: function (options) {
-                this.setDateRange(moment(options.start), moment(options.end));
                 this.color = d3.scale.category10();
+                this.elementId = options.elementId;
 
                 // skip the first color, I can't see the red/green difference
                 this.color.domain(['','degreesCelcius', 'humidity']);
@@ -35,12 +35,17 @@ define([
                 this.bindEvents();
             },
 
-            fetch: function () {
+            fetch: function (start, end) {
+                this.start = start;
+                this.end = end;
                 var that = this;
+
+                if (this.isFetching) { return; }
+                this.isFetching = true;
 
                 d3.json(this.route(), function(error, data) {
 
-                    if (!!error) { throw error; }
+                    if (!!error) { that.isFetching = false; throw error; }
 
                     data.forEach(function(d) {
                         d.date = new Date(d.datetime);
@@ -53,6 +58,7 @@ define([
                     that.data = data;
 
                     that.render();
+                    that.isFetching = false;
                 });
             },
 
@@ -78,9 +84,6 @@ define([
             render: function () {
                 var that = this;
 
-                this.template = _.template(template, {});
-                this.$el.html(this.template);
-
                 var width = this.width - this.margin.left - this.margin.right;
                 var height = this.height - this.margin.top - this.margin.bottom;
 
@@ -103,15 +106,19 @@ define([
                     .x(function(d) { return x(d.date); })
                     .y(function(d) { return y(d.value); });
 
+                x.domain(d3.extent(this.data, function(d) { return d.date; }));
+                y.domain(this.getYDomain(this.series));
+
+                this.template = _.template(template, {});
+
+                this.$el.html(this.template);
+
                 var svg = d3.select('#' + that.el.id + ' div').append('svg')
                     .attr('width', this.width)
                     .attr('height', this.height)
                     .append('g')
                     .attr('transform', 'translate(' +
                         this.margin.left + ',' + this.margin.top + ')');
-
-                x.domain(d3.extent(this.data, function(d) { return d.date; }));
-                y.domain(this.getYDomain(this.series));
 
                 svg.append('g')
                     .attr('class', 'x axis')
