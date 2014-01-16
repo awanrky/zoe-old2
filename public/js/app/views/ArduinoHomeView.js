@@ -110,13 +110,13 @@ define([
 
                 this.assign(this.getDateRangePickerView()).render().update(this.start, this.end);
 
-                this.assign(this.getDhtTemperatureMultiSeriesLineChartView()).fetch();
+                this.assign(this.getDhtTemperatureMultiSeriesLineChartView()).fetch(this.start, this.end);
 
-                this.assign(this.getBmp180BarometricPressureLineChartView()).fetch();
+                this.assign(this.getBmp180BarometricPressureLineChartView()).fetch(this.start, this.end);
 
-                this.assign(this.getDhtHumidityMultiSeriesLineChartView()).fetch();
+                this.assign(this.getDhtHumidityMultiSeriesLineChartView()).fetch(this.start, this.end);
 
-                this.assign(this.getCd5LightIntensityMultiSeriesLineChartView()).fetch();
+                this.assign(this.getCd5LightIntensityMultiSeriesLineChartView()).fetch(this.start, this.end);
 
                 return this;
             }
