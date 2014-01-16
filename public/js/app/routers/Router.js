@@ -19,6 +19,8 @@ define([
     ) {
         'use strict';
 
+        var unBindEvents = function(){};
+
         var router = Backbone.Router.extend({
 
             initialize: function() {
@@ -53,15 +55,21 @@ define([
             }()),
 
             dashboard: function() {
+                unBindEvents();
                 this.getDashboardView().render();
+                unBindEvents = _.bind(this.getDashboardView().unBindEvents, this.getDashboardView());
                 this.setNavBarItemActive('dashboard');
             },
 
             arduinoHome: function(start, end) {
-                this.getArduinoHomeView().render({
-                    start: start,
-                    end: end
-                });
+                unBindEvents();
+                this.getArduinoHomeView()
+                    .render({
+                        start: start,
+                        end: end
+                    })
+                    .bindEvents();
+                unBindEvents = _.bind(this.getArduinoHomeView().unBindEvents, this.getArduinoHomeView());
                 this.setNavBarItemActive('arduinohome');
             },
 

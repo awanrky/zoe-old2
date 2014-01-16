@@ -32,6 +32,8 @@ define([
 
             initialize: function(options) {
                 this.elementId = options.elementId;
+
+
             },
 
             update: function(start, end) {

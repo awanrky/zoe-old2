@@ -61,7 +61,6 @@ define([
 
             initialize: function (options) {
                 this.setDateRange(moment(options.start), moment(options.end));
-                this.bindEvents();
             },
 
             refresh: function() {
@@ -154,10 +153,9 @@ define([
             },
 
             bindEvents: function() {
+                this.unBindEvents();
                 console.log('bindEvents ' + this.el.id);
                 var that = this;
-
-                this.stopListening(Notifier);
 
                 this.listenTo(Notifier, 'onMinute3', function() {
                     console.log('onMinute3 ' + that.el.id);
@@ -168,6 +166,16 @@ define([
                     console.log('dateRangePickerUpdated ' + that.el.id);
                     that.fetch(start, end);
                 });
+
+                return this;
+            },
+
+            unBindEvents: function() {
+                console.log('unBindEvents ' + this.el.id);
+
+                this.stopListening(Notifier);
+
+                return this;
             }
 
         });

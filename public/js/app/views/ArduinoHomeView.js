@@ -36,13 +36,17 @@ define([
 
         return ZoeView.extend({
 
-            initialize: function() {
-                this.listenTo(Notifier, 'dateRangePickerUpdated', function(start, end) {
-                    window.App.navigate('arduino-home/' +
-                        encodeURIComponent(moment(start).format()) + '/' +
-                        encodeURIComponent(moment(end).format()));
-                });
-            },
+            getLineChartViews: (function() {
+                var views;
+                return function() {
+                    return views || (views = [
+                        this.getDhtTemperatureMultiSeriesLineChartView(),
+                        this.getBmp180BarometricPressureLineChartView(),
+                        this.getDhtHumidityMultiSeriesLineChartView(),
+                        this.getCd5LightIntensityMultiSeriesLineChartView()
+                    ]);
+                };
+            }()),
 
             getDateRangePickerView: (function() {
                 var view;
@@ -94,7 +98,29 @@ define([
                 return view;
             },
 
+            bindEvents: function() {
+                this.unBindEvents();
+                this.listenTo(Notifier, 'dateRangePickerUpdated', function(start, end) {
+                    window.App.navigate('arduino-home/' +
+                        encodeURIComponent(moment(start).format()) + '/' +
+                        encodeURIComponent(moment(end).format()));
+                });
+                _.each(this.getLineChartViews(), function(v) {
+                    v.bindEvents();
+                });
+                return this;
+            },
+
+            unBindEvents: function() {
+                this.stopListening();
+                _.each(this.getLineChartViews(), function(v) {
+                    v.unBindEvents();
+                });
+                return this;
+            },
+
             render: function(options) {
+                var that = this;
 
                 if (!options) { options = {}; }
                 this.start = options.start ?
@@ -108,15 +134,13 @@ define([
 
                 this.$el.html(this.template);
 
-                this.assign(this.getDateRangePickerView()).render().update(this.start, this.end);
+                this.assign(this.getDateRangePickerView())
+                    .render()
+                    .update(this.start, this.end);
 
-                this.assign(this.getDhtTemperatureMultiSeriesLineChartView()).fetch(this.start, this.end);
-
-                this.assign(this.getBmp180BarometricPressureLineChartView()).fetch(this.start, this.end);
-
-                this.assign(this.getDhtHumidityMultiSeriesLineChartView()).fetch(this.start, this.end);
-
-                this.assign(this.getCd5LightIntensityMultiSeriesLineChartView()).fetch(this.start, this.end);
+                _.each(this.getLineChartViews(), function(v) {
+                    that.assign(v).fetch(that.start, that.end);
+                });
 
                 return this;
             }

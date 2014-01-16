@@ -36,6 +36,14 @@ define([
 
         return ZoeView.extend({
 
+            bindEvents: function() {
+
+            },
+
+            unBindEvents: function() {
+
+            },
+
             render: function() {
 
                 this.template = _.template(dashboardTemplate, {});
