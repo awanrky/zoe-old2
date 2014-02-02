@@ -145,16 +145,16 @@ define([
                     .attr('d', function(d) { return line(d.values); })
                     .style('stroke', function(d) { return that.color(d.name); });
 
-                value.append('text')
-                    .datum(function(d) {
-                        return {name: d.name, value: d.values[d.values.length - 1]};
-                    })
-                    .attr('transform', function(d) {
-                        return 'translate(' + x(d.value.date) + ',' + y(d.value.value) + ')';
-                    })
-                    .attr('x', 3)
-                    .attr('dy', '.30em')
-                    .text(function(d) { return d.name; });
+//                value.append('text')
+//                    .datum(function(d) {
+//                        return {name: d.name, value: d.values[d.values.length - 1]};
+//                    })
+//                    .attr('transform', function(d) {
+//                        return 'translate(' + x(d.value.date) + ',' + y(d.value.value) + ')';
+//                    })
+//                    .attr('x', 3)
+//                    .attr('dy', '.30em')
+//                    .text(function(d) { return d.name; });
 
                 return this;
             }

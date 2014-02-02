@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fae70d3-9a53-4e65-a5c9-a3ee5ba1f2c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" afterPath="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/DashboardView.js" afterPath="$PROJECT_DIR$/public/js/app/views/DashboardView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js" afterPath="$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js" afterPath="$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/routers/Router.js" afterPath="$PROJECT_DIR$/public/js/app/routers/Router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Bmp180BarometricPressureLineChartView.js" afterPath="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Bmp180BarometricPressureLineChartView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js" afterPath="$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api/v1/arduino-home/bmp180.js" afterPath="$PROJECT_DIR$/server/api/v1/arduino-home/bmp180.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api/v1/arduino-home/invalid.js" afterPath="$PROJECT_DIR$/server/api/v1/arduino-home/invalid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="zoe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +33,43 @@
       <file leaf-file-name="MultiSeriesLineChartView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="69" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="296" max-vertical-offset="3042">
+            <state line="136" column="0" selection-start="4113" selection-end="4113" vertical-scroll-proportion="0.0" vertical-offset="2137" max-vertical-offset="3042">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invalid.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/invalid.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="37" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="1062">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bmp180.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/bmp180.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="0" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.44772726" vertical-offset="560" max-vertical-offset="1440">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1422">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="route.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/api/route.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
               <folding />
             </state>
           </provider>
@@ -41,16 +78,7 @@
       <file leaf-file-name="ArduinoHomeView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="19" selection-start="4144" selection-end="4144" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2826">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateRangePickerView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="1962">
+            <state line="141" column="0" selection-start="4914" selection-end="4914" vertical-scroll-proportion="0.0" vertical-offset="2538" max-vertical-offset="2826">
               <folding />
             </state>
           </provider>
@@ -59,16 +87,7 @@
       <file leaf-file-name="LineChartView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="0" selection-start="4478" selection-end="4478" vertical-scroll-proportion="0.0" vertical-offset="2456" max-vertical-offset="3384">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateRangePicker.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app/templates/controls/DateRangePicker.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+            <state line="166" column="0" selection-start="4842" selection-end="4842" vertical-scroll-proportion="0.0" vertical-offset="2988" max-vertical-offset="3384">
               <folding />
             </state>
           </provider>
@@ -77,34 +96,25 @@
       <file leaf-file-name="DashboardView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/views/DashboardView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="19" selection-start="1607" selection-end="1607" vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="1692">
+            <state line="67" column="0" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.0" vertical-offset="1206" max-vertical-offset="1692">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="13" selection-start="5196" selection-end="5196" vertical-scroll-proportion="0.0" vertical-offset="2511" max-vertical-offset="3348">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Router.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/routers/Router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="0" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.3868132" vertical-offset="764" max-vertical-offset="1674">
+            <state line="74" column="0" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.0" vertical-offset="1332" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app/templates/Dashboard.html">
+      <file leaf-file-name="Bmp180BarometricPressureLineChartView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Bmp180BarometricPressureLineChartView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="30" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="396">
+            <state line="42" column="30" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1152">
               <folding />
             </state>
           </provider>
@@ -128,30 +138,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Cd5LightIntensityMultiSeriesLineChartView.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/arduino-home/gauges/Bmp180BarometricPressureGauge.js" />
         <option value="$PROJECT_DIR$/public/js/app/views/arduino-home/gauges/Bmp180BarometricPressureOutdoorGaugeView.js" />
         <option value="$PROJECT_DIR$/public/js/app/models/arduino-home/gauges/Bmp180BarometricPressureOutdoorGaugeView.js" />
         <option value="$PROJECT_DIR$/public/js/app/models/arduino-home/gauges/Bmp180BarometricPressureOutdoorGaugeModel.js" />
         <option value="$PROJECT_DIR$/public/js/app/models/arduino-home/Bmp180Model.js" />
         <option value="$PROJECT_DIR$/public/js/app/templates/Dashboard.html" />
         <option value="$PROJECT_DIR$/public/js/app/views/gauges/Bmp180BarometricPressureGaugeView.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Bmp180BarometricPressureLineChartView.js" />
         <option value="$PROJECT_DIR$/public/js/app/views/ZoeView.js" />
-        <option value="$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js" />
         <option value="$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js" />
         <option value="$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js" />
         <option value="$PROJECT_DIR$/public/js/app/views/DashboardView.js" />
         <option value="$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js" />
         <option value="$PROJECT_DIR$/public/js/app/routers/Router.js" />
+        <option value="$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Bmp180BarometricPressureLineChartView.js" />
+        <option value="$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js" />
+        <option value="$PROJECT_DIR$/server/api/v1/arduino-home/invalid.js" />
+        <option value="$PROJECT_DIR$/server/api/v1/arduino-home/bmp180.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="3833" />
-    <option name="y" value="7" />
+    <option name="y" value="-8" />
     <option name="width" value="1919" />
-    <option name="height" value="1070" />
+    <option name="height" value="1094" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -195,6 +205,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino-home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,39 +367,103 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arduino-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="requirejs_main_js_file_path" value="public/js/app/config/Init.js" />
-    <property name="web_dir" value="public" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="requirejs_function_name" value="require" />
-    <property name="options.lastSelected" value="requirejs.properties.RequirejsSettingsPage" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../arduino-home" />
-    <property name="FullScreen" value="false" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="132" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="141" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="147" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1056" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="132" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="141" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="147" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../arduino-home" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="147" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1056" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1056" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="147" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="141" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FullScreen" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="requirejs_main_js_file_path" value="public/js/app/config/Init.js" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="requirejs_function_name" value="require" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="requirejs.properties.RequirejsSettingsPage" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="web_dir" value="public" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -325,6 +479,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -335,30 +497,22 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="" />
-      <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser url="" />
+      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <list size="0" />
@@ -373,7 +527,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3833" y="7" width="1919" height="1070" extended-state="0" />
+    <frame x="3833" y="-8" width="1919" height="1094" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -388,15 +542,15 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1705757" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18901454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18888289" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296146" sideWeight="0.8415155" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296146" sideWeight="0.8415155" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -417,9 +571,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17129135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18729989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -439,99 +593,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="3042">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="45" selection-start="3736" selection-end="3736" vertical-scroll-proportion="0.0" vertical-offset="1944" max-vertical-offset="2394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="59" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="1926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="65" selection-start="4589" selection-end="4589" vertical-scroll-proportion="0.0" vertical-offset="2898" max-vertical-offset="3240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/templates/controls/DateRangePicker.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/DashboardView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="19" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1548">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="13" selection-start="5196" selection-end="5196" vertical-scroll-proportion="0.0" vertical-offset="2511" max-vertical-offset="3348">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/routers/Router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="14" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/templates/Dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/gauges/Bmp180BarometricPressureOutdoorGaugeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="806" selection-end="806" vertical-scroll-proportion="0.6486486" vertical-offset="0" max-vertical-offset="888" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/gauges/Bmp180BarometricPressureGaugeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="58" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="990" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Bmp180BarometricPressureLineChartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="1116" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/templates/charts/MultiSeriesLineChart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Cd5LightIntensityMultiSeriesLineChartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="1224" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/ZoeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="192" selection-end="192" vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="888" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="176" column="13" selection-start="5196" selection-end="5196" vertical-scroll-proportion="0.0" vertical-offset="2511" max-vertical-offset="3348">
@@ -560,51 +621,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/config/Init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1944">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1944" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/views/controls/DateRangePickerView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="1962">
+        <state line="37" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1962">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/views/DashboardView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="19" selection-start="1607" selection-end="1607" vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="1692">
+        <state line="67" column="0" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.0" vertical-offset="1206" max-vertical-offset="1692">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/LineChartView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="0" selection-start="4478" selection-end="4478" vertical-scroll-proportion="0.0" vertical-offset="2456" max-vertical-offset="3384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="69" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="296" max-vertical-offset="3042">
+        <state line="166" column="0" selection-start="4842" selection-end="4842" vertical-scroll-proportion="0.0" vertical-offset="2988" max-vertical-offset="3384">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/views/ArduinoHomeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="19" selection-start="4144" selection-end="4144" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2826">
+        <state line="141" column="0" selection-start="4914" selection-end="4914" vertical-scroll-proportion="0.0" vertical-offset="2538" max-vertical-offset="2826">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/routers/Router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.3868132" vertical-offset="764" max-vertical-offset="1674">
+        <state line="74" column="0" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.0" vertical-offset="1332" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/arduino-home/charts/Bmp180BarometricPressureLineChartView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="30" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/invalid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="37" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="1062">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1422">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="880">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/views/charts/MultiSeriesLineChartView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="0" selection-start="4113" selection-end="4113" vertical-scroll-proportion="0.0" vertical-offset="2137" max-vertical-offset="3042">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/v1/arduino-home/bmp180.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.44772726" vertical-offset="560" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>

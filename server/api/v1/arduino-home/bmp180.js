@@ -49,16 +49,25 @@ module.exports.api = function(server) {
     });
 
     server.post(route.getPath(), function(req, res) {
+
+        var data = req.body;
+
+        if (!data.hectoPascals) {
+            res.send(500, JSON.stringify(req.body));
+            return;
+        }
+
         new schema({
             sensorType: 'BMP180',
-            datetime: req.body.datetime || new Date(),
-            sensorName: req.body.sensorName,
-            hectoPascals: req.body.hectoPascals,
-            degreesCelcius: req.body.degreesCelcius,
-            altitudeInMeters: req.body.altitudeInMeters
+            datetime: data.datetime || new Date(),
+            sensorName: data.sensorName,
+            hectoPascals: data.hectoPascals,
+            degreesCelcius: data.degreesCelcius,
+            altitudeInMeters: data.altitudeInMeters
         }).save(function(error) {
             if (error) {
                 res.send(500, {error: error.message});
+                return;
             }
             res.send(201);
         });
