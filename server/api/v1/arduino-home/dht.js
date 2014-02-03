@@ -95,11 +95,18 @@ module.exports.api = function(server) {
     });
 
     server.post(route.getPath(), function(req, res) {
+
+        console.log(req.body);
+
+        if (!req.body.humidity) {
+            res.send(500, 'no data');
+            return;
+        }
+
         new schema({
             sensorType: 'DHT',
             datetime: req.body.datetime || new Date(),
             sensorName: req.body.sensorName,
-            sensorPin: req.body.sensorPin,
             humidity: req.body.humidity,
             degreesCelcius: req.body.degreesCelcius
         }).save(function(error) {

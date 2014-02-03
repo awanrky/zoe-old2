@@ -46,11 +46,17 @@ module.exports.api = function(server) {
     });
 
     server.post(route.getPath(), function(req, res) {
+
+        if (!req.body.reading) {
+            res.send(500, JSON.stringify(req.body));
+            return;
+        }
+
         new schema({
             sensorType: 'Cd5',
             datetime: req.body.datetime || new Date(),
             sensorName: req.body.sensorName,
-            sensorPin: req.body.sensorPin,
+//            sensorPin: req.body.sensorPin,
             reading: req.body.reading
         }).save(function(error) {
             if (error) {
