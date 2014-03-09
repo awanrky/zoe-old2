@@ -4,7 +4,7 @@
 'use strict';
 
 var Route = require('./../route');
-var schema = require('./../schemas/arduino-home/test');
+var schema = require('../../../schemas/arduino-home/test');
 
 var route = new Route('arduino-home/test');
 
