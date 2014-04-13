@@ -7,6 +7,11 @@
           <option name="serverName" value="localhost" />
           <option name="serverPort" value="27017" />
         </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="label" value="dragonfly" />
+          <option name="serverName" value="dragonfly" />
+          <option name="serverPort" value="27017" />
+        </ServerConfiguration>
       </list>
     </option>
     <option name="shellPath" value="mongo" />
