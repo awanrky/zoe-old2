@@ -15,7 +15,7 @@ define([
 
         return Bmp180Model.extend({
 
-            'url': 'api/v1/arduino-home/Bmp180/last/outside-deck/1'
+            'url': 'api/v1/arduino-home/Bmp180/last/living-room/1'
 
         });
     }
