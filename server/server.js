@@ -13,6 +13,7 @@ var cd5api = require('./api/v1/arduino-home/cd5'),
     bmp180api = require('./api/v1/arduino-home/bmp180'),
     invalidapi = require('./api/v1/arduino-home/invalid'),
     dhtapi = require('./api/v1/arduino-home/dht'),
+    temperatureapi = require('./api/v1/arduino-home/temperature'),
     testapi = require('./api/v1/arduino-home/test');
 
 // DATABASE CONFIGURATION
@@ -67,6 +68,7 @@ tmp36api.api(server);
 tsl2561api.api(server);
 bmp180api.api(server);
 invalidapi.api(server);
+temperatureapi.api(server);
 testapi.api(server);
 
 // Start Node.js Server

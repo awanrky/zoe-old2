@@ -44,7 +44,7 @@ define([
 
             el: '#dht-temperature-multi-series-line-chart',
 
-            url: 'api/v1/arduino-home/dht',
+            url: 'api/v1/arduino-home/temperature',
 
             path: 'daterange',
 

@@ -16,7 +16,7 @@ define([
 
         return DhtModel.extend({
 
-            'url': 'api/v1/arduino-home/bmp180/last/living-room/1'
+            'url': 'api/v1/arduino-home/temperature/last/living-room/1'
 
         });
     }
