@@ -10,7 +10,7 @@ define([
     'views/arduino-home/gauges/DhtGaugeOutdoorDeckView',
     'views/arduino-home/gauges/DhtGaugeIndoorView',
     'views/arduino-home/gauges/DhtHumidityOutdoorGaugeView',
-    'views/arduino-home/gauges/DhtHumidityIndoorGaugeView',
+//    'views/arduino-home/gauges/DhtHumidityIndoorGaugeView',
     'views/arduino-home/gauges/Cd5LightIntensityOutdoorGaugeView',
     'views/arduino-home/gauges/Cd5LightIntensityIndoorGaugeView',
     'views/arduino-home/gauges/Bmp180BarometricPressureOutdoorGaugeView',
@@ -26,7 +26,7 @@ define([
         DhtGaugeOutdoorView,
         DhtGaugeIndoorView,
         DhtHumidityOutdoorGaugeView,
-        DhtHumidityIndoorGaugeView,
+//        DhtHumidityIndoorGaugeView,
         Cd5LightIntensityOutdoorGaugeView,
         Cd5LightIntensityIndoorGaugeView,
         Bmp180BarometricPressureOutdoorGaugeView,
@@ -62,9 +62,9 @@ define([
                     el: '#dht-humidity-outdoor-gauge-view'
                 });
 
-                this.dhtHumidityIndoorGaugeView = new DhtHumidityIndoorGaugeView({
-                    el: '#dht-humidity-indoor-gauge-view'
-                });
+//                this.dhtHumidityIndoorGaugeView = new DhtHumidityIndoorGaugeView({
+//                    el: '#dht-humidity-indoor-gauge-view'
+//                });
 
                 this.cd5LightIntensityOutdoorGaugeView = new Cd5LightIntensityOutdoorGaugeView({
                     el: '#cd5-light-intensity-outdoor-gauge-view'
